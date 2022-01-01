@@ -12,6 +12,7 @@
     "lintfix": "prettier --write --list-different ."
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "bootstrap": "^4.6.1",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.19.3",
@@ -22,7 +23,10 @@
     "webpack": "^4.46.0"
   },
   "devDependencies": {
+    "@nuxtjs/fontawesome": "^1.1.2",
     "eslint-config-prettier": "^8.3.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.5.1",
+    "sass": "^1.45.1",
+    "sass-loader": "10"
   }
 }
