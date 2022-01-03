@@ -19,6 +19,7 @@ export default {
     name: {
       type: String,
       required: true,
+      default: '',
     },
     price: {
       type: Number,
@@ -43,12 +44,6 @@ export default {
   .img-hover-zoom {
     overflow: hidden;
     margin: 0 auto;
-
-    &:hover {
-      img {
-        transform: scale(1.2);
-      }
-    }
   }
 
   img {
@@ -60,8 +55,9 @@ export default {
   .product-desc {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 12px 12px 2px 12px;
+    padding: 14px 14px 4px 14px;
 
     .price {
       font-style: italic;
@@ -73,6 +69,10 @@ export default {
   &:hover {
     opacity: 0.9;
     cursor: pointer;
+
+    img {
+      transform: scale(1.15);
+    }
   }
 }
 </style>

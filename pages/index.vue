@@ -28,9 +28,9 @@
           <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
 
           <Product
-            name="Sitni kolači 300g"
-            :price="48"
-            imageSrc="christmas-product2.jpg"
+            :name="'Salty & Nutty'"
+            :price="22"
+            imageSrc="salty-and-nutty.jpg"
           />
         </div>
       </div>
