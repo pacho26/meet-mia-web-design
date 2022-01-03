@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 .product {
-  max-width: 360px;
+  max-width: 354px;
   overflow: hidden;
   color: #fff;
   border-radius: 8px;
@@ -52,7 +52,7 @@ export default {
   }
 
   .product-desc {
-    background: #404040;
+    background: #3c6477;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

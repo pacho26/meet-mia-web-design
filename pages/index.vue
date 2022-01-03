@@ -32,6 +32,22 @@
             :price="22"
             imageSrc="salty-and-nutty.jpg"
           />
+
+          <Product
+            name="Petit Fours"
+            :price="20"
+            imageSrc="christmas-product1.jpg"
+          />
+
+          <Product name="6 divas" :price="28" imageSrc="6-divas.jpg" />
+
+          <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
+
+          <Product
+            :name="'Salty & Nutty'"
+            :price="22"
+            imageSrc="salty-and-nutty.jpg"
+          />
         </div>
       </div>
 
@@ -41,7 +57,9 @@
             src="../assets/img/products/carrot-cake-cover.jpg"
             style="width: 100%"
           />
-          <h2>Kolači</h2>
+          <div class="category-text-container">
+            <h2>Kolači</h2>
+          </div>
         </div>
 
         <div class="sandwiches">
@@ -49,12 +67,18 @@
             src="../assets/img/products/signor-prosciutto.jpg"
             style="width: 100%"
           />
+          <div class="category-text-container">
+            <h2>Sendviči</h2>
+          </div>
         </div>
         <div class="croissants">
           <img
             src="../assets/img/products/croissant-pistacija.jpg"
             style="width: 100%"
           />
+          <div class="category-text-container">
+            <h2>Kroasani</h2>
+          </div>
         </div>
       </div>
     </main>
@@ -81,11 +105,12 @@ main {
 
     h1 {
       font-size: 48px;
-      color: #262626;
+      color: #223944;
+      font-weight: 500;
     }
 
     p {
-      color: #333333;
+      color: #2b4755;
     }
   }
 
@@ -94,8 +119,12 @@ main {
     bottom: 0px;
     background-color: hsl(0, 0%, 93%, 0.75);
     width: 100%;
-    padding: 12px 24px 22px 28px;
+    padding: 14px 24px 24px 30px;
     // text-align: center;
+
+    p {
+      font-size: 20px;
+    }
   }
 
   .trendy-container {
@@ -103,28 +132,49 @@ main {
 
     h2 {
       font-size: 36px;
-      color: #333333;
+      color: #2b4755;
     }
 
     .products-container {
-      display: flex;
+      display: inline-flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
+      & > * {
+        margin-bottom: 52px;
+      }
     }
   }
 
   .categories {
     position: relative;
 
+    .category-text-container {
+      background-color: hsl(0, 0%, 93%, 0.6);
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+
+      h2 {
+        text-align: right;
+        padding: 16px 20px 2px 0;
+        color: #2b4755;
+      }
+    }
+
+    img {
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      -webkit-transition: all 0.25s ease-in-out;
+
+      &:hover {
+      }
+    }
+
     .cakes {
       max-width: 60%;
       position: relative;
-
-      h2 {
-        position: absolute;
-        bottom: 16px;
-        right: 30px;
-      }
+      -webkit-transition: all 0.25s ease-in-out;
     }
 
     .sandwiches {
@@ -132,6 +182,15 @@ main {
       position: absolute;
       right: 0;
       top: 0;
+      -webkit-transition: all 0.25s ease-in-out;
+
+      .category-text-container {
+        background-color: hsl(0, 0%, 93%, 0.2);
+
+        h2 {
+          font-size: 28px;
+        }
+      }
     }
 
     .croissants {
@@ -139,12 +198,26 @@ main {
       position: absolute;
       right: 0;
       bottom: 0;
+      -webkit-transition: all 0.25s ease-in-out;
+
+      .category-text-container {
+        background-color: hsl(0, 0%, 93%, 0.5);
+
+        h2 {
+          font-size: 28px;
+        }
+      }
     }
 
     & > * {
       &:hover {
-        opacity: 0.9;
         cursor: pointer;
+        -webkit-transform: scale(1.01);
+
+        img {
+          filter: none;
+          -webkit-filter: grayscale(0);
+        }
       }
     }
   }
