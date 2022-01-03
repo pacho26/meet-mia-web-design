@@ -81,6 +81,11 @@ main {
 
     h1 {
       font-size: 48px;
+      color: #262626;
+    }
+
+    p {
+      color: #333333;
     }
   }
 
@@ -98,6 +103,7 @@ main {
 
     h2 {
       font-size: 36px;
+      color: #333333;
     }
 
     .products-container {
