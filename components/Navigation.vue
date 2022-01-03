@@ -85,7 +85,7 @@ export default {
 
 .nav-main {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1500px;
   height: 94px;
   align-items: center;
   justify-content: space-between;
