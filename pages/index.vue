@@ -164,7 +164,7 @@ main {
 
     img {
       filter: gray;
-      -webkit-filter: grayscale(1);
+      -webkit-filter: grayscale(0.5);
       -webkit-transition: all 0.25s ease-in-out;
 
       &:hover {
