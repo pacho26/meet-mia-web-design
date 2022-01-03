@@ -79,7 +79,7 @@ export default {
 .nav-container {
   background: #f0f0f0;
   height: 94px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   z-index: 999;
 }
 
@@ -167,7 +167,7 @@ export default {
   top: 94px;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   z-index: 1;
   border-radius: 0 0 8px 8px;
 }

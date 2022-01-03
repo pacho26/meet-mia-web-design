@@ -35,7 +35,7 @@ $secondary-color: #fff;
   font-weight: 500;
   padding: 8px 24px;
   transition: all 0.2s ease-in-out;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 
   &:hover {
     background: $secondary-color;

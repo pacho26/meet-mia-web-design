@@ -39,7 +39,7 @@ export default {
   background: #404040;
   color: #fff;
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 
   .img-hover-zoom {
     overflow: hidden;
