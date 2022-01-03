@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 .product {
   max-width: 360px;
-  background: #404040;
+  overflow: hidden;
   color: #fff;
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
@@ -44,15 +44,15 @@ export default {
   .img-hover-zoom {
     overflow: hidden;
     margin: 0 auto;
+    position: relative;
   }
 
   img {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s all ease-out;
   }
 
   .product-desc {
+    background: #404040;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

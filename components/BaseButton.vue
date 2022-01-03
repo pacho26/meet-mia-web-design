@@ -36,6 +36,9 @@ $secondary-color: #fff;
   padding: 8px 24px;
   transition: all 0.2s ease-in-out;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  outline: 0;
+  border: none;
 
   &:hover {
     background: $secondary-color;

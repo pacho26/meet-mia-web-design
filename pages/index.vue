@@ -89,7 +89,7 @@ main {
     bottom: 0px;
     background-color: hsl(0, 0%, 93%, 0.75);
     width: 100%;
-    padding: 12px 24px 20px 26px;
+    padding: 12px 24px 22px 28px;
     // text-align: center;
   }
 
