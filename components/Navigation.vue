@@ -74,13 +74,13 @@ export default {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
 }
 
 .nav-container {
   background: #f0f0f0;
   height: 94px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  z-index: 999;
 }
 
 .nav-main {
@@ -227,7 +227,7 @@ export default {
 }
 
 .user-icons > * {
-  padding: 10px;
+  padding: 2px;
 }
 
 .user-icons > :hover {
@@ -244,26 +244,8 @@ export default {
 .fa-shopping-cart {
   width: 30px;
   height: 30px;
+  margin-right: 10px;
   color: #507c95;
-}
-
-main {
-  margin: 0 auto;
-  max-width: 1200px;
-  margin-bottom: 120px;
-}
-
-.cover-container {
-  position: relative;
-}
-
-.cover-text {
-  position: absolute;
-  bottom: 0px;
-  background-color: hsl(0, 0%, 93%, 0.5);
-  width: 100%;
-  padding-bottom: 20px;
-  padding-top: 10px;
 }
 
 #hamburger-icon {
@@ -287,10 +269,6 @@ main {
     top: 0;
     width: 100%;
   }
-
-  // body {
-  //   margin-top: 132px;
-  // }
 }
 
 @media only screen and (max-width: 768px) {
