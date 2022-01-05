@@ -2,16 +2,7 @@
   <div>
     <Navigation />
     <main>
-      <div class="cover-container">
-        <img src="../assets/img/christmas-cover.jpg" style="width: 100%" />
-        <div class="cover-text">
-          <h1>Božićna ponuda</h1>
-          <p>
-            Kušajte naše Božićne delicije i upotpunite svoj blagdanski ugođaj.
-          </p>
-          <BaseButton :buttonText="'Saznajte više'" />
-        </div>
-      </div>
+      <Slideshow />
 
       <div class="trendy-container">
         <h2>Božićna ponuda</h2>
@@ -95,37 +86,6 @@ main {
   max-width: 1500px;
   margin-top: 140px;
   margin-bottom: 140px;
-
-  .cover-container {
-    position: relative;
-
-    img {
-      width: 100%;
-    }
-
-    h1 {
-      font-size: 48px;
-      color: #223944;
-      font-weight: 500;
-    }
-
-    p {
-      color: #2b4755;
-    }
-  }
-
-  .cover-text {
-    position: absolute;
-    bottom: 0px;
-    background-color: hsl(0, 0%, 93%, 0.75);
-    width: 100%;
-    padding: 14px 24px 24px 30px;
-    // text-align: center;
-
-    p {
-      font-size: 20px;
-    }
-  }
 
   .trendy-container {
     margin-top: 100px;

@@ -35,7 +35,7 @@ export default {
 
 <style lang="scss" scoped>
 .product {
-  max-width: 354px;
+  max-width: 353px;
   overflow: hidden;
   color: #fff;
   border-radius: 8px;
@@ -43,8 +43,6 @@ export default {
 
   .img-hover-zoom {
     overflow: hidden;
-    margin: 0 auto;
-    position: relative;
   }
 
   img {
