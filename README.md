@@ -1,6 +1,6 @@
 # meet-mia
 
-## Todos💡
+## Todos ✅
 - add loader
 - finish slideshow
 
