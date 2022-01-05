@@ -1,5 +1,9 @@
 # meet-mia
 
+## Todos
+- add loader
+- finish slideshow
+
 ## Build Setup
 
 ```bash
