@@ -108,7 +108,7 @@ export default {
         } else {
           this.skipSwitching = false;
         }
-      }, 5000);
+      }, 6000);
     },
   },
 };
