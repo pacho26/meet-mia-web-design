@@ -6,7 +6,13 @@
         <div class="slideshow-text">
           <h1>Meet Mia</h1>
           <p>Dobro došli u naš branch & cake bar, najslađe mjesto u gradu!</p>
-          <BaseButton :buttonText="'Saznajte više'" to="/about-us" />
+          <nuxt-link to="about-us">
+            <BaseButton
+              class="slideshow-btn"
+              :buttonText="'Saznajte više'"
+              to="/about-us"
+            />
+          </nuxt-link>
         </div>
       </div>
 
@@ -17,8 +23,11 @@
           <p>
             Kušajte naše Božićne delicije i upotpunite svoj blagdanski ugođaj.
           </p>
-          <div @click="scroll('#bozicna-ponuda')">
-            <BaseButton :buttonText="'Saznajte više'" />
+          <div
+            class="slideshow-btn-container"
+            @click="scroll('#bozicna-ponuda')"
+          >
+            <BaseButton class="slideshow-btn" :buttonText="'Saznajte više'" />
           </div>
         </div>
       </div>
@@ -154,7 +163,6 @@ export default {
       padding: 14px 24px 24px 30px;
       opacity: 0.9;
       transition: 0.2s ease-in-out;
-      // text-align: center;
 
       h1 {
         font-size: 48px;
@@ -165,6 +173,10 @@ export default {
       p {
         font-size: 20px;
         color: #2b4755;
+      }
+
+      .slideshow-btn-container {
+        width: fit-content;
       }
     }
   }
@@ -273,7 +285,41 @@ export default {
         height: 70vh;
       }
 
-      .arrows {
+      .slideshow-text {
+        text-align: center;
+
+        h1 {
+          font-size: 32px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+
+        .slideshow-btn {
+          transform: scale(0.95, 0.95);
+        }
+
+        .slideshow-btn-container {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    .arrows {
+      .fa {
+        display: inherit;
+        opacity: 0.95;
+        width: 50px;
+        height: 58px;
+
+        &:first-of-type {
+          margin-left: 2px;
+        }
+
+        &:last-of-type {
+          margin-right: 2px;
+        }
       }
     }
   }

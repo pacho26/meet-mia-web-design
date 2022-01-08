@@ -101,7 +101,7 @@ export default {
 main {
   margin: 0 auto;
   max-width: 1500px;
-  margin-top: 140px;
+  margin-top: 94px;
   margin-bottom: 140px;
 
   .trend-container {
@@ -110,15 +110,17 @@ main {
     h2 {
       font-size: 36px;
       color: #2b4755;
+      margin-bottom: 32px;
     }
 
     .products-container {
       display: inline-flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 28px;
       flex-wrap: wrap;
 
       & > * {
-        margin-bottom: 52px;
+        margin-bottom: 42px;
       }
     }
   }
@@ -128,7 +130,7 @@ main {
     margin-top: 110px;
 
     .category-text-container {
-      background-color: hsl(0, 0%, 93%, 0.6);
+      background-color: hsl(0, 0%, 93%, 0.4);
       position: absolute;
       width: 100%;
       bottom: 0;
@@ -144,9 +146,6 @@ main {
       filter: gray;
       -webkit-filter: grayscale(0.5);
       -webkit-transition: all 0.25s ease-in-out;
-
-      &:hover {
-      }
     }
 
     .cakes {
@@ -195,6 +194,50 @@ main {
         img {
           filter: none;
           -webkit-filter: grayscale(0);
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    .categories {
+      margin: 0 22px;
+
+      .cakes {
+        max-width: 100%;
+
+        .category-text-container {
+          h2 {
+            font-size: 24px;
+          }
+        }
+
+        img {
+          content: url('../assets/img/products/salty-and-nutty.jpg');
+        }
+      }
+
+      .sandwiches {
+        position: inherit;
+        max-width: 100%;
+        margin-top: 12px;
+
+        .category-text-container {
+          h2 {
+            font-size: 24px;
+          }
+        }
+      }
+
+      .croissants {
+        position: inherit;
+        max-width: 100%;
+        margin-top: 12px;
+
+        .category-text-container {
+          h2 {
+            font-size: 24px;
+          }
         }
       }
     }

@@ -25,7 +25,7 @@ $colors: #1a2b33, #2b4755, #669ab2, #aac7d4;
   height: 100vh;
   background-color: #333;
   z-index: 99999;
-  opacity: 0.98;
+  opacity: 0.99;
 }
 
 .cube {
