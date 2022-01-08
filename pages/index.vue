@@ -1,83 +1,97 @@
 <template>
   <div>
-    <Navigation />
-    <main>
-      <Slideshow />
+    <BaseLoader v-if="isLoading" />
 
-      <div class="trendy-container">
-        <h2>Božićna ponuda</h2>
+    <div class="content-container">
+      <Navigation />
+      <main>
+        <Slideshow />
 
-        <div class="products-container">
-          <Product
-            name="Petit Fours"
-            :price="20"
-            imageSrc="christmas-product1.jpg"
-          />
+        <div class="trendy-container">
+          <h2>Božićna ponuda</h2>
 
-          <Product name="6 divas" :price="28" imageSrc="6-divas.jpg" />
+          <div class="products-container">
+            <Product
+              name="Petit Fours"
+              :price="20"
+              imageSrc="christmas-product1.jpg"
+            />
 
-          <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
+            <Product name="6 divas" :price="28" imageSrc="6-divas.jpg" />
 
-          <Product
-            :name="'Salty & Nutty'"
-            :price="22"
-            imageSrc="salty-and-nutty.jpg"
-          />
+            <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
 
-          <Product
-            name="Petit Fours"
-            :price="20"
-            imageSrc="christmas-product1.jpg"
-          />
+            <Product
+              :name="'Salty & Nutty'"
+              :price="22"
+              imageSrc="salty-and-nutty.jpg"
+            />
 
-          <Product name="6 divas" :price="28" imageSrc="6-divas.jpg" />
+            <Product
+              name="Petit Fours"
+              :price="20"
+              imageSrc="christmas-product1.jpg"
+            />
 
-          <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
+            <Product name="6 divas" :price="28" imageSrc="6-divas.jpg" />
 
-          <Product
-            :name="'Salty & Nutty'"
-            :price="22"
-            imageSrc="salty-and-nutty.jpg"
-          />
-        </div>
-      </div>
+            <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
 
-      <div class="categories mt-5">
-        <div class="cakes">
-          <img
-            src="../assets/img/products/carrot-cake-cover.jpg"
-            style="width: 100%"
-          />
-          <div class="category-text-container">
-            <h2>Kolači</h2>
+            <Product
+              :name="'Salty & Nutty'"
+              :price="22"
+              imageSrc="salty-and-nutty.jpg"
+            />
           </div>
         </div>
 
-        <div class="sandwiches">
-          <img
-            src="../assets/img/products/signor-prosciutto.jpg"
-            style="width: 100%"
-          />
-          <div class="category-text-container">
-            <h2>Sendviči</h2>
+        <div class="categories mt-5">
+          <div class="cakes">
+            <img
+              src="../assets/img/products/carrot-cake-cover.jpg"
+              style="width: 100%"
+            />
+            <div class="category-text-container">
+              <h2>Kolači</h2>
+            </div>
+          </div>
+
+          <div class="sandwiches">
+            <img
+              src="../assets/img/products/signor-prosciutto.jpg"
+              style="width: 100%"
+            />
+            <div class="category-text-container">
+              <h2>Sendviči</h2>
+            </div>
+          </div>
+          <div class="croissants">
+            <img
+              src="../assets/img/products/croissant-pistacija.jpg"
+              style="width: 100%"
+            />
+            <div class="category-text-container">
+              <h2>Kroasani</h2>
+            </div>
           </div>
         </div>
-        <div class="croissants">
-          <img
-            src="../assets/img/products/croissant-pistacija.jpg"
-            style="width: 100%"
-          />
-          <div class="category-text-container">
-            <h2>Kroasani</h2>
-          </div>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      isLoading: true,
+    };
+  },
+
+  mounted() {
+    this.isLoading = false;
+  },
+};
 </script>
 
 <style lang="scss" scoped>
