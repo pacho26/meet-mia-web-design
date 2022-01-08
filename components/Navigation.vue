@@ -5,9 +5,9 @@
         <fa class="fa-bars" icon="bars"></fa>
       </div>
 
-      <div id="logo">
+      <nuxt-link id="logo" to="/">
         <img src="../assets/img/logo.png" alt="logo" />
-      </div>
+      </nuxt-link>
 
       <ul>
         <li class="dropdown">
@@ -21,7 +21,9 @@
             <a href="#" id="dropdown-item">KROASANI</a>
           </div>
         </li>
-        <li><a href="#">O NAMA</a></li>
+        <li>
+          <nuxt-link to="about-us">O NAMA </nuxt-link>
+        </li>
         <li><a href="#">KONTAKT</a></li>
       </ul>
 
@@ -81,6 +83,14 @@ export default {
   height: 94px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   z-index: 999;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.93;
+
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .nav-main {
@@ -168,7 +178,6 @@ export default {
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
-  z-index: 1;
   border-radius: 0 0 8px 8px;
 }
 
@@ -263,21 +272,12 @@ export default {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
-  .nav-container {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .nav-main ul {
     display: none;
   }
 
   .mobile-nav {
-    display: none;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 10px;
   }
 

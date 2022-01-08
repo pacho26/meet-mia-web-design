@@ -2,22 +2,24 @@
   <main>
     <div class="slideshow-container">
       <div class="slide fade">
-        <img src="../assets/img/about-us-cover.jpg" style="width: 100%" />
+        <img src="../assets/img/about-us-cover.jpg" />
         <div class="slideshow-text">
           <h1>Meet Mia</h1>
           <p>Dobro došli u naš branch & cake bar, najslađe mjesto u gradu!</p>
-          <BaseButton :buttonText="'Saznajte više'" />
+          <BaseButton :buttonText="'Saznajte više'" to="/about-us" />
         </div>
       </div>
 
       <div class="slide fade">
-        <img src="../assets/img/christmas-cover.jpg" style="width: 100%" />
+        <img src="../assets/img/christmas-cover.jpg" />
         <div class="slideshow-text">
           <h1>Božićna ponuda</h1>
           <p>
             Kušajte naše Božićne delicije i upotpunite svoj blagdanski ugođaj.
           </p>
-          <BaseButton :buttonText="'Saznajte više'" />
+          <div @click="scroll('#bozicna-ponuda')">
+            <BaseButton :buttonText="'Saznajte više'" />
+          </div>
         </div>
       </div>
 
@@ -74,6 +76,12 @@ export default {
     this.startChangeSlidesInterval();
   },
   methods: {
+    async scroll(id) {
+      location.href = id;
+      setTimeout(() => {
+        window.scrollBy(0, -120);
+      }, 1);
+    },
     plusSlides(n) {
       this.showSlides((this.slideIndex += n));
     },
@@ -102,7 +110,6 @@ export default {
     },
     startChangeSlidesInterval() {
       setInterval(() => {
-        console.log('this.skipSwitching :>> ', this.skipSwitching);
         if (!this.skipSwitching) {
           this.plusSlides(1);
         } else {
@@ -136,6 +143,7 @@ export default {
     img {
       width: 100%;
       user-select: none;
+      object-fit: cover;
     }
 
     .slideshow-text {
@@ -144,6 +152,7 @@ export default {
       background-color: hsla(0, 0%, 93%, 0.7);
       width: 100%;
       padding: 14px 24px 24px 30px;
+      opacity: 0.9;
       // text-align: center;
 
       h1 {
@@ -194,6 +203,10 @@ export default {
   &:hover {
     .fa {
       display: block;
+    }
+
+    .slideshow-text {
+      opacity: 1;
     }
   }
 }
@@ -247,6 +260,21 @@ export default {
   }
   to {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .slideshow-container {
+    height: 70vh;
+
+    .slide {
+      img {
+        height: 70vh;
+      }
+
+      .arrows {
+      }
+    }
   }
 }
 </style>

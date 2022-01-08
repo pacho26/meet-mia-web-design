@@ -7,7 +7,7 @@
       <main>
         <Slideshow />
 
-        <div class="trendy-container">
+        <div class="trend-container" id="bozicna-ponuda">
           <h2>Božićna ponuda</h2>
 
           <div class="products-container">
@@ -22,9 +22,9 @@
             <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
 
             <Product
-              :name="'Salty & Nutty'"
+              :name="'Carrot cake'"
               :price="22"
-              imageSrc="salty-and-nutty.jpg"
+              imageSrc="carrot-cake.jpg"
             />
 
             <Product
@@ -38,17 +38,17 @@
             <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
 
             <Product
-              :name="'Salty & Nutty'"
+              :name="'Carrot cake'"
               :price="22"
-              imageSrc="salty-and-nutty.jpg"
+              imageSrc="carrot-cake.jpg"
             />
           </div>
         </div>
 
-        <div class="categories mt-5">
+        <div class="categories">
           <div class="cakes">
             <img
-              src="../assets/img/products/carrot-cake-cover.jpg"
+              src="../assets/img/products/salty-and-nutty-cover.jpg"
               style="width: 100%"
             />
             <div class="category-text-container">
@@ -89,7 +89,10 @@ export default {
   },
 
   mounted() {
-    this.isLoading = false;
+    // In order to prevent flash for a moment
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 600);
   },
 };
 </script>
@@ -101,7 +104,7 @@ main {
   margin-top: 140px;
   margin-bottom: 140px;
 
-  .trendy-container {
+  .trend-container {
     margin-top: 100px;
 
     h2 {
@@ -122,6 +125,7 @@ main {
 
   .categories {
     position: relative;
+    margin-top: 110px;
 
     .category-text-container {
       background-color: hsl(0, 0%, 93%, 0.6);
