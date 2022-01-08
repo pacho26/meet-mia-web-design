@@ -149,10 +149,11 @@ export default {
     .slideshow-text {
       position: absolute;
       bottom: 0px;
-      background-color: hsla(0, 0%, 93%, 0.7);
+      background-color: hsla(0, 0%, 93%, 0.77);
       width: 100%;
       padding: 14px 24px 24px 30px;
       opacity: 0.9;
+      transition: 0.2s ease-in-out;
       // text-align: center;
 
       h1 {
