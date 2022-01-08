@@ -248,7 +248,7 @@ export default {
 
 @-webkit-keyframes fade {
   from {
-    opacity: 0.5;
+    opacity: 0.6;
   }
   to {
     opacity: 1;
@@ -257,7 +257,7 @@ export default {
 
 @keyframes fade {
   from {
-    opacity: 0.5;
+    opacity: 0.6;
   }
   to {
     opacity: 1;
