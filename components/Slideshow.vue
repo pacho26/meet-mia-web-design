@@ -92,7 +92,7 @@ export default {
     this.startChangeSlidesInterval();
   },
   methods: {
-    async scroll(id) {
+    scroll(id) {
       location.href = id;
       setTimeout(() => {
         window.scrollBy(0, -100);
