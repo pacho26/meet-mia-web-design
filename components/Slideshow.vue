@@ -95,7 +95,7 @@ export default {
     async scroll(id) {
       location.href = id;
       setTimeout(() => {
-        window.scrollBy(0, -120);
+        window.scrollBy(0, -100);
       }, 1);
     },
     plusSlides(n) {
