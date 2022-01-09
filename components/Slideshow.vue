@@ -78,9 +78,16 @@ export default {
     return {
       slideIndex: 1,
       skipSwitching: false,
+      isTouchDevice: false,
     };
   },
   mounted() {
+    this.isTouchDevice = window.ontouchstart !== undefined ? true : false;
+    if (this.isTouchDevice) {
+      // Make arrows always visible
+      document.querySelector('.fa-angle-left').style.display = 'inherit';
+      document.querySelector('.fa-angle-right').style.display = 'inherit';
+    }
     this.showSlides(this.slideIndex);
     this.startChangeSlidesInterval();
   },
@@ -279,12 +286,10 @@ export default {
 
 @media only screen and (max-width: 580px) {
   .slideshow-container {
-    height: 81vh;
-
     .slide {
-      height: 81vh;
+      height: 78vh;
       img {
-        height: 81vh;
+        height: 78vh;
       }
 
       .slideshow-text {
@@ -310,7 +315,6 @@ export default {
 
     .arrows {
       .fa {
-        display: inherit;
         opacity: 0.95;
         width: 50px;
         height: 58px;
