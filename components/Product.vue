@@ -35,7 +35,6 @@ export default {
 
 <style lang="scss" scoped>
 .product {
-  // -------------------- FIX THIS, FOR EVERY DEVICE, CHANGE [size]vw --------------------
   max-width: 23%;
   overflow: hidden;
   color: #fff;
