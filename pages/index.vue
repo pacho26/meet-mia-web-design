@@ -102,17 +102,17 @@ main {
   margin-bottom: 140px;
 
   .trend-container {
-    margin-top: 100px;
+    margin-top: 80px;
 
     h2 {
       font-size: 36px;
-      color: #2b4755;
+      color: #335566;
       margin-bottom: 32px;
     }
 
     .products-container {
       display: inline-flex;
-      justify-content: center;
+      // justify-content: center;
       gap: 2.6%;
       flex-wrap: wrap;
 
@@ -124,7 +124,7 @@ main {
 
   .categories {
     position: relative;
-    margin-top: 110px;
+    margin-top: 120px;
 
     .category-text-container {
       background-color: hsl(0, 0%, 93%, 0.4);
@@ -200,22 +200,25 @@ main {
 
   @media only screen and (max-width: 1548px) {
     .trend-container {
-      margin: 0 48px;
+      margin: 0 3vw;
     }
 
     .categories {
-      margin: 0 48px;
+      margin: 0 3vw;
+      margin-top: 120px;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .trend-container {
+      h2 {
+        font-size: 30px;
+      }
     }
   }
 
   @media only screen and (max-width: 580px) {
-    .trend-container {
-      margin: 0 22px;
-    }
-
     .categories {
-      margin: 0 22px;
-
       .cakes {
         max-width: 100%;
 

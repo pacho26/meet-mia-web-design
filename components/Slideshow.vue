@@ -168,7 +168,7 @@ export default {
       bottom: 0px;
       background-color: hsla(0, 0%, 93%, 0.77);
       width: 100%;
-      padding: 14px 24px 24px 30px;
+      padding: 12px 24px 24px 30px;
       opacity: 0.9;
       transition: 0.2s ease-in-out;
 
@@ -176,11 +176,13 @@ export default {
         font-size: 48px;
         color: #223944;
         font-weight: 500;
+        margin-bottom: 2px;
       }
 
       p {
         font-size: 20px;
         color: #2b4755;
+        margin-bottom: 20px;
       }
 
       .slideshow-btn-container {
@@ -284,6 +286,29 @@ export default {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .slideshow-container {
+    .slide {
+      .slideshow-text {
+        text-align: center;
+
+        h1 {
+          font-size: 36px;
+        }
+
+        p {
+          font-size: 18px;
+          margin-bottom: 18px;
+        }
+
+        .slideshow-btn-container {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 580px) {
   .slideshow-container {
     .slide {
@@ -293,8 +318,6 @@ export default {
       }
 
       .slideshow-text {
-        text-align: center;
-
         h1 {
           font-size: 32px;
         }
@@ -305,10 +328,6 @@ export default {
 
         .slideshow-btn {
           transform: scale(0.95, 0.95);
-        }
-
-        .slideshow-btn-container {
-          margin: 0 auto;
         }
       }
     }

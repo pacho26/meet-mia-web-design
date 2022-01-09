@@ -93,6 +93,22 @@ export default {
 
   @media only screen and (max-width: 860px) {
     max-width: 31.5%;
+
+    .product-desc {
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 580px) {
+    max-width: 48.2%;
+
+    .product-desc {
+      h4 {
+        font-size: 17px;
+      }
+    }
   }
 }
 </style>

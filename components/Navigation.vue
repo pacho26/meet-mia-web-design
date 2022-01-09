@@ -272,6 +272,12 @@ export default {
   display: none;
 }
 
+@media only screen and (max-width: 1548px) {
+  .user-icons {
+    margin-right: 3vw;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .nav-main ul {
     display: none;
