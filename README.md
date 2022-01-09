@@ -1,9 +1,4 @@
-# meet-mia
-
-## Todos ✅
-
-- add loader
-- finish slideshow
+# Meet Mia
 
 ## Build Setup
 
