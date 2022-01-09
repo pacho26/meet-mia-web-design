@@ -287,9 +287,9 @@ export default {
 @media only screen and (max-width: 580px) {
   .slideshow-container {
     .slide {
-      height: 78vh;
+      height: 76vh;
       img {
-        height: 78vh;
+        height: 76vh;
       }
 
       .slideshow-text {
