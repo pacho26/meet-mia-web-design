@@ -18,10 +18,7 @@ export default {
   },
 
   mounted() {
-    // In order to prevent flash for a moment
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 600);
+    this.isLoading = false;
   },
 };
 </script>

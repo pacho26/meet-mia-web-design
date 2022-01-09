@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$primary-color: #558faa;
+$primary-color: #4d8199;
 $secondary-color: #fff;
 
 * {

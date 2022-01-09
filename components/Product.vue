@@ -36,7 +36,7 @@ export default {
 <style lang="scss" scoped>
 .product {
   // -------------------- FIX THIS, FOR EVERY DEVICE, CHANGE [size]vw --------------------
-  max-width: 22vw;
+  max-width: 23%;
   overflow: hidden;
   color: #fff;
   border-radius: 8px;
@@ -72,6 +72,28 @@ export default {
     img {
       transform: scale(1.15);
     }
+  }
+
+  @media only screen and (max-width: 1400px) {
+    .product-desc {
+      flex-direction: column;
+      align-items: inherit;
+      padding: 0px 12px 0px 14px;
+
+      h4 {
+        font-size: 22px;
+        margin-bottom: 4px;
+        margin-top: 8px;
+      }
+      .price {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 860px) {
+    max-width: 31.5%;
   }
 }
 </style>

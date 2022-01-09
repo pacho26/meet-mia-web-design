@@ -89,10 +89,7 @@ export default {
   },
 
   mounted() {
-    // In order to prevent flash for a moment
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 600);
+    this.isLoading = false;
   },
 };
 </script>
@@ -116,7 +113,7 @@ main {
     .products-container {
       display: inline-flex;
       justify-content: center;
-      gap: 28px;
+      gap: 2.6%;
       flex-wrap: wrap;
 
       & > * {
@@ -146,12 +143,14 @@ main {
       filter: gray;
       -webkit-filter: grayscale(0.5);
       -webkit-transition: all 0.25s ease-in-out;
+      border-radius: 8px;
     }
 
     .cakes {
       max-width: 60%;
       position: relative;
       -webkit-transition: all 0.25s ease-in-out;
+      border-radius: 8px;
     }
 
     .sandwiches {
@@ -199,7 +198,21 @@ main {
     }
   }
 
+  @media only screen and (max-width: 1548px) {
+    .trend-container {
+      margin: 0 48px;
+    }
+
+    .categories {
+      margin: 0 48px;
+    }
+  }
+
   @media only screen and (max-width: 580px) {
+    .trend-container {
+      margin: 0 22px;
+    }
+
     .categories {
       margin: 0 22px;
 
