@@ -98,7 +98,7 @@ export default {
 main {
   margin: 0 auto;
   max-width: 1500px;
-  margin-top: 94px;
+  margin-top: 75px;
   margin-bottom: 140px;
 
   .trend-container {

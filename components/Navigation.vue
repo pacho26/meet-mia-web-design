@@ -6,7 +6,7 @@
       </div>
 
       <nuxt-link id="logo" to="/">
-        <img src="../assets/img/logo.png" alt="logo" />
+        <img src="../assets/img/logo-cropped.png" alt="logo" />
       </nuxt-link>
 
       <ul>
@@ -80,7 +80,7 @@ export default {
 
 .nav-container {
   background: #f0f0f0;
-  height: 94px;
+  height: 75px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
   z-index: 999;
   position: fixed;
@@ -96,7 +96,7 @@ export default {
 .nav-main {
   margin: 0 auto;
   max-width: 1500px;
-  height: 94px;
+  height: 75px;
   align-items: center;
   justify-content: space-between;
 }
@@ -174,7 +174,7 @@ export default {
   display: none;
   position: absolute;
   left: 0;
-  top: 94px;
+  top: 75px;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
@@ -218,13 +218,13 @@ export default {
 }
 
 #logo img {
-  max-height: 94px;
+  max-height: 75px;
   display: block;
   transition: 0.15s ease-in-out;
 }
 
 #logo:hover img {
-  transform: scale(1.35, 1);
+  transform: scale(1.25, 1);
 }
 
 .user-icons {
@@ -245,14 +245,14 @@ export default {
 }
 
 .fa-user {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   color: #507c95;
 }
 
 .fa-shopping-cart {
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   margin-right: 10px;
   color: #507c95;
 }
