@@ -146,11 +146,12 @@ export default {
 
   .slide {
     position: relative;
-    max-height: 770px;
+    height: 85vh;
     overflow: hidden;
 
     img {
       width: 100%;
+      height: 85vh;
       user-select: none;
       object-fit: cover;
     }
@@ -278,11 +279,12 @@ export default {
 
 @media only screen and (max-width: 580px) {
   .slideshow-container {
-    height: 70vh;
+    height: 81vh;
 
     .slide {
+      height: 81vh;
       img {
-        height: 70vh;
+        height: 81vh;
       }
 
       .slideshow-text {
