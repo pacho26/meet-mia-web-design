@@ -200,11 +200,11 @@ main {
 
   @media only screen and (max-width: 1548px) {
     .trend-container {
-      margin: 0 3vw;
+      margin: 0 3.3vw;
     }
 
     .categories {
-      margin: 0 3vw;
+      margin: 0 3.3vw;
       margin-top: 120px;
     }
   }
