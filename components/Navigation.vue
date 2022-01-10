@@ -311,11 +311,11 @@ export default {
   }
 
   .user-icons {
-    margin-right: 10px;
-  }
+    margin-right: 3vw;
 
-  .user-icons > * {
-    padding: 10px;
+    .shopping-cart-icon {
+      margin-right: 1.5vw;
+    }
   }
 
   ul {
@@ -358,7 +358,7 @@ export default {
   .mobile-dropdown-content li a {
     font-size: 18px;
     position: absolute;
-    left: 10px;
+    left: 5vw;
   }
 
   .show-element {
@@ -379,6 +379,8 @@ export default {
   .fa-shopping-cart {
     width: 24px;
     height: 24px;
+    position: relative;
+    left: 10px;
   }
 }
 </style>
