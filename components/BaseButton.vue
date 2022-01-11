@@ -35,7 +35,7 @@ $secondary-color: #fff;
   font-weight: 500;
   padding: 10px 26px;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
   cursor: pointer;
   outline: 0;
   border: none;

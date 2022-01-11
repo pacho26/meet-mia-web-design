@@ -153,12 +153,12 @@ export default {
 
   .slide {
     position: relative;
-    height: 85vh;
+    height: 66vh;
     overflow: hidden;
 
     img {
       width: 100%;
-      height: 85vh;
+      height: 66vh;
       user-select: none;
       object-fit: cover;
     }
@@ -202,6 +202,7 @@ export default {
     .fa {
       width: 60px;
       height: 70px;
+      transform: scale(0.75, 1);
       color: #223944;
       opacity: 0.8;
       cursor: pointer;
@@ -218,7 +219,7 @@ export default {
 
       &:hover {
         opacity: 0.95;
-        transform: scale(1.15);
+        transform: scale(0.86, 1.12);
       }
     }
   }
@@ -237,13 +238,13 @@ export default {
 .dots-container {
   text-align: center;
   user-select: none;
-  margin-top: 20px;
+  margin-top: 24px;
 
   .dot {
     cursor: pointer;
     height: 18px;
     width: 18px;
-    margin: 0 14px;
+    margin: 0 15px;
     background-color: #cccccc;
     border-radius: 50%;
     display: inline-block;
@@ -312,9 +313,9 @@ export default {
 @media only screen and (max-width: 580px) {
   .slideshow-container {
     .slide {
-      height: 76vh;
+      height: 68vh;
       img {
-        height: 76vh;
+        height: 68vh;
       }
 
       .slideshow-text {

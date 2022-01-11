@@ -37,9 +37,9 @@ export default {
 .product {
   max-width: 23%;
   overflow: hidden;
-  color: #fff;
+  color: #3c6477;
   border-radius: 8px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
 
   .img-hover-zoom {
     overflow: hidden;
@@ -50,7 +50,7 @@ export default {
   }
 
   .product-desc {
-    background: #3c6477;
+    background: #fff;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -60,16 +60,19 @@ export default {
     .price {
       font-style: italic;
       font-size: 18px;
-      color: #e6e6e6;
+      color: #447288;
     }
   }
 
   &:hover {
-    opacity: 0.9;
     cursor: pointer;
 
     img {
-      transform: scale(1.15);
+      transform: scale(1.06);
+    }
+
+    .product-desc {
+      opacity: 0.94;
     }
   }
 

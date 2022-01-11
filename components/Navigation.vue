@@ -11,10 +11,10 @@
 
       <ul>
         <li class="dropdown">
-          <button class="dropbtn">
+          <div class="dropbtn">
             PROIZVODI
             <fa class="fa-caret-square-down" icon="caret-square-down"></fa>
-          </button>
+          </div>
           <div class="dropdown-content">
             <a href="#" id="dropdown-item">KOLAČI</a>
             <a href="#" id="dropdown-item">SENDVIČI</a>
@@ -81,12 +81,13 @@ export default {
 .nav-container {
   background: #f0f0f0;
   height: 75px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.14);
   z-index: 999;
   position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.93;
+  transition: 0.16s all ease-in-out;
 
   &:hover {
     opacity: 1;
@@ -116,6 +117,7 @@ export default {
   align-items: center;
   padding: 0 30px;
   cursor: pointer;
+  transition: 0.16s all ease-in-out;
 }
 
 .nav-main li:hover {
@@ -150,23 +152,21 @@ export default {
   float: left;
   position: relative;
 
+  .dropbtn {
+    font-size: 20px;
+    color: #507c95;
+    font-weight: 500;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
   &:hover {
     .fa-caret-square-down,
     .dropbtn {
       color: #fff;
     }
-  }
-
-  .dropbtn {
-    font-size: 20px;
-    color: #507c95;
-    font-weight: 500;
-    border: none;
-    outline: none;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit;
-    margin: 0;
   }
 }
 
@@ -177,13 +177,15 @@ export default {
   top: 75px;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
   border-radius: 0 0 8px 8px;
+  transition: 0.16s all ease-in-out;
 }
 
 #dropdown-item {
   color: #507c95;
   width: 223px;
+  transition: 0.16s all ease-in-out;
 }
 
 #dropdown-item:last-of-type {
@@ -213,18 +215,12 @@ export default {
 #logo {
   cursor: pointer;
   display: inline-block;
-  overflow: hidden;
   user-select: none;
-}
 
-#logo img {
-  max-height: 75px;
-  display: block;
-  transition: 0.15s ease-in-out;
-}
-
-#logo:hover img {
-  transform: scale(1.25, 1);
+  img {
+    max-height: 75px;
+    display: block;
+  }
 }
 
 .user-icons {
@@ -237,6 +233,7 @@ export default {
 
 .user-icons > * {
   padding: 2px;
+  transition: 0.2s all ease-in-out;
 }
 
 .user-icons > :hover {
@@ -284,7 +281,7 @@ export default {
   }
 
   .mobile-nav {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 10px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14);
   }
 
   .mobile-nav > li {

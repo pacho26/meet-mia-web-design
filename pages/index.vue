@@ -98,7 +98,7 @@ export default {
 main {
   margin: 0 auto;
   max-width: 1500px;
-  margin-top: 75px;
+  margin-top: 75px + 84px;
   margin-bottom: 140px;
 
   .trend-container {
@@ -210,6 +210,8 @@ main {
   }
 
   @media only screen and (max-width: 768px) {
+    margin-top: 75px;
+
     .trend-container {
       h2 {
         font-size: 30px;
