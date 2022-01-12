@@ -2,6 +2,14 @@
 
 <img src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.18169-9/11863239_1023481607716648_260935832054096310_n.png?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeF-Dw5fp0bv2X1MCYIsRwghh2DhaIOS8QSHYOFog5LxBGRJA9nX0O6BCimuJcReTsZcOvuaC5qzeSnFnc5B18AD&_nc_ohc=DMEJd-pjsUIAX96Jad6&_nc_ht=scontent-frx5-1.xx&oh=00_AT9oQdOHxAi1LOCtDR9zXZVk_HfvS591kK8jYVOSweCKsg&oe=62010E67" width="250">
 
+# Todo
+- Product page
+- About us page
+- Footer
+- Stars (rating) of each product
+- Number of products in cart (just increment counter on cart icon probably)
+- All products page with section for each category
+
 ## Build Setup
 
 ```bash
