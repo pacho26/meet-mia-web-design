@@ -1,5 +1,5 @@
 <template>
-  <div class="product">
+  <nuxt-link :to="redirection" class="product">
     <div class="img-hover-zoom">
       <img
         :src="require(`@/assets/img/products/${this.imageSrc}`)"
@@ -10,12 +10,17 @@
       <h4>{{ name }}</h4>
       <p class="price">{{ price.toFixed(2) }} kn</p>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <script>
 export default {
   props: {
+    id: {
+      type: String,
+      required: true,
+      default: '',
+    },
     name: {
       type: String,
       required: true,
@@ -30,6 +35,12 @@ export default {
       required: false,
     },
   },
+
+  computed: {
+    redirection() {
+      return `/products/${this.id}`;
+    },
+  },
 };
 </script>
 
@@ -40,6 +51,7 @@ export default {
   color: #3c6477;
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+  text-decoration: none;
 
   .img-hover-zoom {
     overflow: hidden;

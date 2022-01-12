@@ -9,38 +9,14 @@
 
         <div class="trend-container" id="bozicna-ponuda">
           <h2>Božićna ponuda</h2>
-
           <div class="products-container">
             <Product
-              name="Petit Fours"
-              :price="20"
-              imageSrc="christmas-product1.jpg"
-            />
-
-            <Product name="6 divas" :price="28" imageSrc="6-divas.jpg" />
-
-            <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
-
-            <Product
-              :name="'Carrot cake'"
-              :price="22"
-              imageSrc="carrot-cake.jpg"
-            />
-
-            <Product
-              name="Petit Fours"
-              :price="20"
-              imageSrc="christmas-product1.jpg"
-            />
-
-            <Product name="6 divas" :price="28" imageSrc="6-divas.jpg" />
-
-            <Product name="No Name" :price="28" imageSrc="no-name.jpg" />
-
-            <Product
-              :name="'Carrot cake'"
-              :price="22"
-              imageSrc="carrot-cake.jpg"
+              v-for="product in getChristmasProducts"
+              :key="product.id"
+              :id="product.id"
+              :name="product.name"
+              :price="product.price"
+              :imageSrc="product.imgSrc"
             />
           </div>
         </div>
@@ -81,6 +57,8 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
   data() {
     return {
@@ -90,6 +68,9 @@ export default {
 
   mounted() {
     this.isLoading = false;
+  },
+  computed: {
+    ...mapGetters(['getChristmasProducts']),
   },
 };
 </script>
