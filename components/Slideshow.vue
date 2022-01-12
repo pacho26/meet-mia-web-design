@@ -166,7 +166,9 @@ export default {
     .slideshow-text {
       position: absolute;
       bottom: 0px;
-      background-color: hsla(0, 0%, 93%, 0.77);
+      // background-color: hsla(0, 0%, 93%, 0.77);
+      backdrop-filter: blur(2.5px);
+      background: hsla(0, 0%, 100%, 0.45);
       width: 100%;
       padding: 12px 24px 24px 30px;
       opacity: 0.9;
@@ -230,7 +232,7 @@ export default {
     }
 
     .slideshow-text {
-      opacity: 1;
+      opacity: 0.95;
     }
   }
 }

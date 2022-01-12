@@ -95,6 +95,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
 main {
   margin: 0 auto;
   max-width: 1500px;
@@ -127,14 +128,16 @@ main {
     margin-top: 120px;
 
     .category-text-container {
-      background-color: hsl(0, 0%, 93%, 0.4);
       position: absolute;
-      width: 100%;
-      bottom: 0;
+      right: 2.2%;
+      bottom: 1.2%;
 
       h2 {
         text-align: right;
-        padding: 16px 20px 2px 0;
+        backdrop-filter: blur(10px);
+        background: hsla(0, 0%, 100%, 0.2);
+        border-radius: 8px;
+        padding: 12px;
         color: #2b4755;
       }
     }
@@ -161,10 +164,8 @@ main {
       -webkit-transition: all 0.25s ease-in-out;
 
       .category-text-container {
-        background-color: hsl(0, 0%, 93%, 0.2);
-
         h2 {
-          font-size: 28px;
+          font-size: 24px;
         }
       }
     }
@@ -177,10 +178,8 @@ main {
       -webkit-transition: all 0.25s ease-in-out;
 
       .category-text-container {
-        background-color: hsl(0, 0%, 93%, 0.5);
-
         h2 {
-          font-size: 28px;
+          font-size: 24px;
         }
       }
     }
@@ -188,7 +187,6 @@ main {
     & > * {
       &:hover {
         cursor: pointer;
-        -webkit-transform: scale(1.01);
 
         img {
           filter: none;

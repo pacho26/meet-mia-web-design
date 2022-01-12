@@ -79,14 +79,15 @@ export default {
 }
 
 .nav-container {
-  background: #f0f0f0;
   height: 75px;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
   z-index: 999;
   position: fixed;
   top: 0;
   width: 100%;
   opacity: 0.93;
+  backdrop-filter: blur(10px);
+  background: hsla(0, 0%, 100%, 0.9);
   transition: 0.16s all ease-in-out;
 
   &:hover {
