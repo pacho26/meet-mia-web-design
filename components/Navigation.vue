@@ -12,19 +12,19 @@
       <ul>
         <li class="dropdown">
           <div class="dropbtn">
-            PROIZVODI
+            Proizvodi
             <fa class="fa-caret-square-down" icon="caret-square-down"></fa>
           </div>
           <div class="dropdown-content">
-            <a href="#" id="dropdown-item">KOLAČI</a>
-            <a href="#" id="dropdown-item">SENDVIČI</a>
-            <a href="#" id="dropdown-item">KROASANI</a>
+            <a href="#" id="dropdown-item">Kolači</a>
+            <a href="#" id="dropdown-item">Sendviči</a>
+            <a href="#" id="dropdown-item">Kroasani</a>
           </div>
         </li>
         <li>
-          <nuxt-link to="about-us">O NAMA </nuxt-link>
+          <nuxt-link to="about-us">O nama </nuxt-link>
         </li>
-        <li><a href="#">KONTAKT</a></li>
+        <li><a href="#">Kontakt</a></li>
       </ul>
 
       <div class="user-icons">
@@ -40,19 +40,19 @@
 
     <ul class="mobile-nav" ref="mobileNav">
       <li id="mobile-dropdown" @click="extendMobileDropdown()">
-        <a href="#">PROIZVODI</a>
+        <a href="#">Proizvodi</a>
 
         <fa class="fa-caret-square-down" icon="caret-square-down"></fa>
       </li>
 
       <div class="mobile-dropdown-content" ref="mobileDropdownContent">
-        <li id="mobile-dropdown-item"><a href="#">KOLAČI</a></li>
-        <li id="mobile-dropdown-item"><a href="#">SENDVIČI</a></li>
-        <li id="mobile-dropdown-item"><a href="#">KROASANI</a></li>
+        <li id="mobile-dropdown-item"><a href="#">Kolači</a></li>
+        <li id="mobile-dropdown-item"><a href="#">Sendviči</a></li>
+        <li id="mobile-dropdown-item"><a href="#">Kroasani</a></li>
       </div>
 
-      <li><a href="#">O NAMA</a></li>
-      <li><a href="#">KONTAKT</a></li>
+      <li><a href="#">O nama</a></li>
+      <li><a href="#">Kontakt</a></li>
     </ul>
   </div>
 </template>
@@ -89,6 +89,7 @@ export default {
   backdrop-filter: blur(10px);
   background: hsla(0, 0%, 100%, 0.9);
   transition: 0.16s all ease-in-out;
+  text-transform: uppercase;
 
   &:hover {
     opacity: 1;

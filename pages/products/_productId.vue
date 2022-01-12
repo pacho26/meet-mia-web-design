@@ -4,7 +4,20 @@
 
     <div class="content-container">
       <Navigation />
-      <main></main>
+      <main>
+        <div class="content">
+          <div class="img-container">
+            <img
+              :src="require(`@/assets/img/products/${product.imgSrc}`)"
+              style="width: 100%"
+            />
+          </div>
+          <div class="text-container">
+            <div class="categories">Naslovna / {{ product.category }}</div>
+            <h1>{{ product.name }}</h1>
+          </div>
+        </div>
+      </main>
     </div>
   </div>
 </template>
@@ -32,4 +45,35 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+main {
+  margin: 0 auto;
+  max-width: 1500px;
+  margin-top: 75px + 60px;
+  margin-bottom: 140px;
+
+  .content {
+    display: flex;
+
+    .img-container {
+      max-width: 40%;
+      border-radius: 8px;
+      overflow: hidden;
+
+      img {
+        aspect-ratio: 4 / 2.9;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+
+    .text-container {
+      margin-left: 8%;
+
+      .categories {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+</style>
