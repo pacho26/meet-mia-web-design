@@ -223,7 +223,7 @@ main {
 
         .category-text-container {
           h2 {
-            font-size: 24px;
+            font-size: 22px;
           }
         }
 
@@ -235,11 +235,11 @@ main {
       .sandwiches {
         position: inherit;
         max-width: 100%;
-        margin-top: 12px;
+        margin-top: 14px;
 
         .category-text-container {
           h2 {
-            font-size: 24px;
+            font-size: 22px;
           }
         }
       }
@@ -247,11 +247,11 @@ main {
       .croissants {
         position: inherit;
         max-width: 100%;
-        margin-top: 12px;
+        margin-top: 14px;
 
         .category-text-container {
           h2 {
-            font-size: 24px;
+            font-size: 22px;
           }
         }
       }
