@@ -84,7 +84,7 @@ main {
   margin-bottom: 140px;
 
   .trend-container {
-    margin-top: 80px;
+    margin-top: 110px;
 
     h2 {
       font-size: 36px;
@@ -106,7 +106,7 @@ main {
 
   .categories {
     position: relative;
-    margin-top: 120px;
+    margin-top: 140px;
 
     .category-text-container {
       position: absolute;
@@ -179,12 +179,12 @@ main {
 
   @media only screen and (max-width: 1548px) {
     .trend-container {
-      margin: 0 3.3vw;
+      margin: 110px 3.3vw 0;
     }
 
     .categories {
       margin: 0 3.3vw;
-      margin-top: 120px;
+      margin-top: 110px;
     }
   }
 

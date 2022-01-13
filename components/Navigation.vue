@@ -274,6 +274,10 @@ export default {
   .user-icons {
     margin-right: 3.3vw;
   }
+
+  #logo {
+    margin-left: 3.3vw;
+  }
 }
 
 @media only screen and (max-width: 768px) {
