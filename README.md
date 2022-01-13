@@ -10,6 +10,7 @@
 - Stars (rating) of each product
 - Number of products in cart (just increment counter on cart icon probably)
 - All products page with section for each category
+- smooth scroll
 
 ## Build Setup
 
