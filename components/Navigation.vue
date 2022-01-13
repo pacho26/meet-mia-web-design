@@ -257,8 +257,6 @@ export default {
 
 #hamburger-icon {
   display: none;
-  // padding: 10px;
-  margin-left: 3.3vw;
 
   .fa-bars {
     width: 22px;
@@ -271,12 +269,8 @@ export default {
 }
 
 @media only screen and (max-width: 1548px) {
-  .user-icons {
-    margin-right: 3.3vw;
-  }
-
-  #logo {
-    margin-left: 3.3vw;
+  .nav-main {
+    margin: 0 3.3vw;
   }
 }
 
@@ -296,7 +290,7 @@ export default {
   #hamburger-icon {
     display: block;
     cursor: pointer;
-    // padding: 10px;
+    width: 30vw;
   }
 
   #hamburger-icon:hover {
@@ -307,14 +301,10 @@ export default {
     margin-top: 60px;
   }
 
-  #logo {
-    position: absolute;
-    left: 41.4%;
-    margin-left: 0;
-  }
-
   .user-icons {
-    margin-right: 3.3vw;
+    display: flex;
+    justify-content: flex-end;
+    width: 30vw;
 
     .shopping-cart-icon {
       margin-right: 1.5vw;
