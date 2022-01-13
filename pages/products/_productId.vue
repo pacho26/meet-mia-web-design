@@ -1,23 +1,14 @@
 <template>
-  <div>
-    <BaseLoader v-if="isLoading" />
-
-    <div class="content-container">
-      <Navigation />
-      <main>
-        <div class="content">
-          <div class="img-container">
-            <img
-              :src="require(`@/assets/img/products/${product.imgSrc}`)"
-              style="width: 100%"
-            />
-          </div>
-          <div class="text-container">
-            <div class="categories">Naslovna / {{ product.category }}</div>
-            <h1>{{ product.name }}</h1>
-          </div>
-        </div>
-      </main>
+  <div class="content">
+    <div class="img-container">
+      <img
+        :src="require(`@/assets/img/products/${product.imgSrc}`)"
+        style="width: 100%"
+      />
+    </div>
+    <div class="text-container">
+      <div class="categories">Naslovna / {{ product.category }}</div>
+      <h1>{{ product.name }}</h1>
     </div>
   </div>
 </template>

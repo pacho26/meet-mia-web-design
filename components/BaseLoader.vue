@@ -20,10 +20,10 @@ $colors: #1a2b33, #2b4755, #669ab2, #aac7d4;
   width: 100vw;
   height: 100vh;
   z-index: 99999;
-  background-color: #747474a8;
+  background: #747474a8;
   backdrop-filter: blur(10px);
   @supports not (backdrop-filter: blur(10px)) {
-    background-color: rgb(230 230 230 / 95%);
+    background: rgb(230 230 230 / 95%);
   }
 }
 
@@ -34,7 +34,7 @@ $colors: #1a2b33, #2b4755, #669ab2, #aac7d4;
 
   @for $i from 1 through length($colors) {
     &:nth-child(#{$i}) {
-      background-color: nth($colors, $i);
+      background: nth($colors, $i);
       border-radius: 6px;
     }
   }

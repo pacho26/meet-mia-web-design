@@ -10,21 +10,28 @@
       </nuxt-link>
 
       <ul class="nav-list">
-        <li class="dropdown">
+        <div class="nav-link dropdown">
           <div class="dropbtn">
             Proizvodi
             <fa class="fa-caret-square-down" icon="caret-square-down"></fa>
           </div>
           <div class="dropdown-content">
-            <a href="#" id="dropdown-item">Kolači</a>
+            <nuxt-link to="about-us" class="dropdown-item nav-link"
+              >Kolači</nuxt-link
+            >
+            <nuxt-link to="about-us" class="dropdown-item nav-link"
+              >Sendviči</nuxt-link
+            >
+            <nuxt-link to="about-us" class="dropdown-item nav-link"
+              >Kroasani</nuxt-link
+            >
+            <!-- <a href="#" id="dropdown-item">Kolači</a>
             <a href="#" id="dropdown-item">Sendviči</a>
-            <a href="#" id="dropdown-item">Kroasani</a>
+            <a href="#" id="dropdown-item">Kroasani</a> -->
           </div>
-        </li>
-        <li>
-          <nuxt-link to="about-us">O nama </nuxt-link>
-        </li>
-        <li><a href="#">Kontakt</a></li>
+        </div>
+        <nuxt-link class="nav-link" to="about-us">O nama </nuxt-link>
+        <nuxt-link class="nav-link" to="about-us">Kontakt </nuxt-link>
       </ul>
 
       <div class="user-icons">
@@ -66,6 +73,11 @@ export default {
 
     extendMobileDropdown() {
       this.$refs['mobileDropdownContent'].classList.toggle('show-element');
+    },
+    changeRoute() {
+      this.$router.push({
+        path: '/about-us',
+      });
     },
   },
 };
@@ -112,26 +124,29 @@ export default {
   height: 100%;
 }
 
-.nav-main li {
+.nav-link {
+  padding: 0 30px;
   height: 100%;
-  font-size: 20px;
   display: flex;
   align-items: center;
+}
+
+.nav-main .nav-link {
+  height: 100%;
+  font-size: 20px;
   padding: 0 30px;
+  display: flex;
+  align-items: center;
   cursor: pointer;
   transition: 0.16s all ease-in-out;
 }
 
-.nav-list > li:hover {
-  background-color: #719bb3;
-}
-
-.nav-main li:hover a {
+.nav-link:hover {
+  background: #719bb3;
   color: #fff;
 }
 
-.nav-main li a {
-  text-decoration: none;
+.nav-link {
   color: #507c95;
   font-weight: 500;
 }
@@ -142,7 +157,7 @@ export default {
   color: #507c95;
 }
 
-.nav-main li:hover #dropdown-icon {
+.nav-main .nav-link:hover #dropdown-icon {
   fill: #fff;
 }
 
@@ -176,37 +191,28 @@ export default {
   position: absolute;
   left: 0;
   top: 75px;
-  background-color: #f9f9f9;
+  background: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
   border-radius: 0 0 8px 8px;
   transition: 0.16s all ease-in-out;
 }
 
-#dropdown-item {
+.dropdown-item {
   color: #507c95;
-  width: 223px;
+  width: 220.5px;
   transition: 0.16s all ease-in-out;
 }
 
-#dropdown-item:last-of-type {
+.dropdown-item:last-of-type {
   border-radius: 0 0 8px 8px;
 }
 
-#dropdown-item:hover {
-  background-color: #719bb3;
-  color: #fff;
-}
-
-.dropdown-content a {
+.dropdown-content .dropdown-item {
   float: none;
   padding: 16px 16px;
   display: block;
   text-align: center;
-}
-
-.dropdown-content a:hover {
-  background-color: #719bb3;
 }
 
 .dropdown:hover .dropdown-content {
@@ -284,7 +290,7 @@ export default {
   }
 
   .mobile-nav > li {
-    background-color: #f0f0f0;
+    background: #f0f0f0;
   }
 
   #hamburger-icon {

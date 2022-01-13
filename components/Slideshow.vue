@@ -166,7 +166,7 @@ export default {
     .slideshow-text {
       position: absolute;
       bottom: 0px;
-      // background-color: hsla(0, 0%, 93%, 0.77);
+      // background: hsla(0, 0%, 93%, 0.77);
       backdrop-filter: blur(2.5px);
       background: hsla(0, 0%, 100%, 0.45);
       width: 100%;
@@ -247,18 +247,18 @@ export default {
     height: 18px;
     width: 18px;
     margin: 0 15px;
-    background-color: #cccccc;
+    background: #cccccc;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.5s ease;
 
     &:hover {
-      background-color: #669ab2;
+      background: #669ab2;
     }
   }
 
   .active {
-    background-color: #3c6477 !important;
+    background: #3c6477 !important;
   }
 }
 
