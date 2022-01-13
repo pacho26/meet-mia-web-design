@@ -194,7 +194,7 @@ export default {
   background: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 6px 6px;
   transition: 0.16s all ease-in-out;
 }
 
@@ -205,7 +205,7 @@ export default {
 }
 
 .dropdown-item:last-of-type {
-  border-radius: 0 0 8px 8px;
+  border-radius: 0 0 6px 6px;
 }
 
 .dropdown-content .dropdown-item {

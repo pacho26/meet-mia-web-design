@@ -71,7 +71,6 @@ export default {
 
   .products-container {
     display: inline-flex;
-    // justify-content: center;
     gap: 2.6%;
     flex-wrap: wrap;
 
@@ -94,7 +93,7 @@ export default {
       text-align: right;
       backdrop-filter: blur(10px);
       background: hsla(0, 0%, 100%, 0.2);
-      border-radius: 8px;
+      border-radius: 6px;
       padding: 12px;
       color: #2b4755;
     }
@@ -104,14 +103,14 @@ export default {
     filter: gray;
     -webkit-filter: grayscale(0.5);
     -webkit-transition: all 0.25s ease-in-out;
-    border-radius: 8px;
+    border-radius: 6px;
   }
 
   .cakes {
     max-width: 60%;
     position: relative;
     -webkit-transition: all 0.25s ease-in-out;
-    border-radius: 8px;
+    border-radius: 6px;
   }
 
   .sandwiches {

@@ -8,7 +8,10 @@
     </div>
     <div class="product-desc">
       <h4>{{ name }}</h4>
-      <p class="price">{{ price.toFixed(2) }} kn</p>
+      <p class="price">
+        <span class="number">{{ price.toFixed(2) }}</span
+        >kn
+      </p>
     </div>
   </nuxt-link>
 </template>
@@ -49,7 +52,7 @@ export default {
   max-width: 23%;
   overflow: hidden;
   color: #3c6477;
-  border-radius: 8px;
+  border-radius: 6px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
   text-decoration: none;
 
@@ -70,9 +73,16 @@ export default {
     padding: 14px 14px 4px 14px;
 
     .price {
-      font-style: italic;
-      font-size: 18px;
+      font-family: 'Open Sans Condensed';
+      // font-style: italic;
+      font-size: 28px;
       color: #447288;
+
+      .number {
+        font-family: 'Open Sans Condensed';
+        font-weight: 700;
+        margin-right: 2px;
+      }
     }
   }
 
@@ -100,8 +110,13 @@ export default {
         margin-top: 8px;
       }
       .price {
-        font-size: 16px;
+        font-size: 17px;
         margin-bottom: 8px;
+
+        .number {
+          font-weight: 700;
+          margin-right: 2px;
+        }
       }
     }
   }
