@@ -65,13 +65,14 @@ export default {
       isLoading: true,
     };
   },
-
   mounted() {
     this.isLoading = false;
+    document.documentElement.style.overflow = 'auto';
   },
   computed: {
     ...mapGetters(['getChristmasProducts']),
   },
+  watch: {},
 };
 </script>
 

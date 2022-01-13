@@ -7,10 +7,6 @@
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
 <style lang="scss" scoped>
 $colors: #1a2b33, #2b4755, #669ab2, #aac7d4;
 
@@ -23,9 +19,12 @@ $colors: #1a2b33, #2b4755, #669ab2, #aac7d4;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #333;
   z-index: 99999;
-  opacity: 0.99;
+  background-color: #747474a8;
+  backdrop-filter: blur(10px);
+  @supports not (backdrop-filter: blur(10px)) {
+    background-color: rgb(230 230 230 / 95%);
+  }
 }
 
 .cube {

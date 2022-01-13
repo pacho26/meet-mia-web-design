@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <div>
     <div class="slideshow-container">
       <div class="slide fade">
         <img src="../assets/img/about-us-cover.jpg" />
@@ -69,7 +69,7 @@
       ></span>
       <!-- <span class="dot" onclick="currentSlide(3)"></span> -->
     </div>
-  </main>
+  </div>
 </template>
 
 <script>

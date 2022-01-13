@@ -9,7 +9,7 @@
         <img src="../assets/img/logo-cropped.png" alt="logo" />
       </nuxt-link>
 
-      <ul>
+      <ul class="nav-list">
         <li class="dropdown">
           <div class="dropbtn">
             Proizvodi
@@ -122,7 +122,7 @@ export default {
   transition: 0.16s all ease-in-out;
 }
 
-.nav-main li:hover {
+.nav-list > li:hover {
   background-color: #719bb3;
 }
 
@@ -159,7 +159,6 @@ export default {
     color: #507c95;
     font-weight: 500;
     padding: 14px 16px;
-    background-color: inherit;
     font-family: inherit;
     margin: 0;
   }
