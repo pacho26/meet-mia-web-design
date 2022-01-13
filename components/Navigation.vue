@@ -310,6 +310,7 @@ export default {
   #logo {
     position: absolute;
     left: 41.4%;
+    margin-left: 0;
   }
 
   .user-icons {
