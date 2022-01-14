@@ -1,4 +1,5 @@
 export const state = () => ({
+  numberOfItemsInCart: 0,
   christmasProducts: [
     {
       id: '2U03C1GI',
@@ -129,4 +130,12 @@ export const getters = {
   getChristmasProducts: (state) => state.christmasProducts,
   getProductById: (state) => (id) =>
     state.allProducts.filter((item) => item.id === id),
+  getOtherProducts: (state) => state.allProducts.slice(0, 4),
+  getNumberOfItemsInCart: (state) => state.numberOfItemsInCart,
+};
+
+export const mutations = {
+  addItemToCart(state) {
+    state.numberOfItemsInCart++;
+  },
 };

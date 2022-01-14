@@ -74,9 +74,9 @@ export default {
 
     .price {
       font-family: 'Open Sans Condensed';
-      // font-style: italic;
       font-size: 28px;
-      color: #447288;
+      color: #335566;
+      opacity: 0.8;
 
       .number {
         font-family: 'Open Sans Condensed';

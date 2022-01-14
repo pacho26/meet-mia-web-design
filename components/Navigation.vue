@@ -25,9 +25,6 @@
             <nuxt-link to="about-us" class="dropdown-item nav-link"
               >Kroasani</nuxt-link
             >
-            <!-- <a href="#" id="dropdown-item">Kolači</a>
-            <a href="#" id="dropdown-item">Sendviči</a>
-            <a href="#" id="dropdown-item">Kroasani</a> -->
           </div>
         </div>
         <nuxt-link class="nav-link" to="about-us">O nama </nuxt-link>
@@ -36,6 +33,9 @@
 
       <div class="user-icons">
         <div class="shopping-cart-icon">
+          <div v-if="getNumberOfItemsInCart" class="shopping-items">
+            {{ getNumberOfItemsInCart }}
+          </div>
           <fa class="fa-shopping-cart" icon="shopping-cart"></fa>
         </div>
 
@@ -65,7 +65,12 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
+
 export default {
+  computed: {
+    ...mapGetters(['getNumberOfItemsInCart']),
+  },
   methods: {
     extendHamburger() {
       this.$refs['mobileNav'].classList.toggle('show-element');
@@ -259,6 +264,27 @@ export default {
   height: 26px;
   margin-right: 10px;
   color: #507c95;
+}
+
+.shopping-cart-icon {
+  position: relative;
+}
+
+.shopping-items {
+  position: absolute;
+  left: 16px;
+  bottom: 23px;
+  background: #d9a33f;
+  color: #fff;
+  z-index: 99;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 700;
 }
 
 #hamburger-icon {
