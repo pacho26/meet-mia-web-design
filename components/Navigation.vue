@@ -341,7 +341,7 @@ export default {
     .shopping-cart-icon {
       margin-right: 1.5vw;
 
-      .shopping-items  {
+      .shopping-items {
         left: 24px;
       }
     }
