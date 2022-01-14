@@ -53,7 +53,7 @@ export default {
   overflow: hidden;
   color: #3c6477;
   border-radius: 6px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
   text-decoration: none;
 
   .img-hover-zoom {

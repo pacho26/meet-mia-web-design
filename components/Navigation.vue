@@ -97,7 +97,7 @@ export default {
 
 .nav-container {
   height: 75px;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.11);
   z-index: 999;
   position: fixed;
   top: 0;
@@ -198,7 +198,7 @@ export default {
   top: 75px;
   background: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
   border-radius: 0 0 6px 6px;
   transition: 0.16s all ease-in-out;
 }
@@ -312,7 +312,7 @@ export default {
   }
 
   .mobile-nav {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.12);
   }
 
   .mobile-nav > li {

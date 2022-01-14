@@ -92,7 +92,7 @@ $secondary-500: #e2b96d;
       // max-width: 40%;
       border-radius: 6px;
       overflow: hidden;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.13);
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
 
       img {
         aspect-ratio: 4 / 2.9;
@@ -187,7 +187,7 @@ $secondary-500: #e2b96d;
         // max-width: 680px;
         border-radius: 6px;
         overflow: hidden;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.13);
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
 
         img {
           aspect-ratio: 4 / 2.9;
