@@ -33,7 +33,7 @@
 
       <div class="user-icons">
         <div class="shopping-cart-icon">
-          <div v-if="getNumberOfItemsInCart" class="shopping-items">
+          <div class="shopping-items">
             {{ getNumberOfItemsInCart }}
           </div>
           <fa class="fa-shopping-cart" icon="shopping-cart"></fa>
