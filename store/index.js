@@ -31,7 +31,6 @@ export const state = () => ({
       desc: 'Biskviti s lješnjacima, slani karamel, krema od mascarponea i karamela',
       imgSrc: 'salty-and-nutty.jpg',
       price: 22,
-      category: 'kolači',
     },
     {
       id: 'dQJCtEo7',
@@ -39,7 +38,6 @@ export const state = () => ({
       desc: 'Tart s malinom, kremom od mascarponea, tonke i amaretta, crumble od badema',
       imgSrc: 'art-of-tart.jpg',
       price: 22,
-      category: 'kolači',
     },
     {
       id: 'xr0I7kyu',
@@ -47,7 +45,6 @@ export const state = () => ({
       desc: 'Tart s kremom od limuna i meringueom',
       imgSrc: 'lemon-tart.jpg',
       price: 18,
-      category: 'kolači',
     },
     {
       id: 'YZ0AeZHM',
@@ -55,7 +52,6 @@ export const state = () => ({
       desc: 'Tart od jabuka s crumbleom od lješnjaka i karamelom',
       imgSrc: 'i-pie.jpg',
       price: 18,
-      category: 'kolači',
     },
   ],
   allProducts: [
@@ -103,7 +99,7 @@ export const state = () => ({
       id: 'dQJCtEo7',
       name: 'Art of tart',
       desc: 'Tart s malinom, kremom od mascarponea, tonke i amaretta, crumble od badema',
-      imgSrc: 'salty-and-nutty.jpg',
+      imgSrc: 'art-of-tart.jpg',
       price: 22,
       category: 'kolači',
     },
@@ -128,9 +124,12 @@ export const state = () => ({
 
 export const getters = {
   getChristmasProducts: (state) => state.christmasProducts,
+
   getProductById: (state) => (id) =>
     state.allProducts.filter((item) => item.id === id),
+  
   getOtherProducts: (state) => state.allProducts.slice(0, 4),
+  
   getNumberOfItemsInCart: (state) => state.numberOfItemsInCart,
 };
 
