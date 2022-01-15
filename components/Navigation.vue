@@ -103,7 +103,7 @@ export default {
   top: 0;
   width: 100%;
   opacity: 0.93;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
   background: hsla(0, 0%, 100%, 0.9);
   transition: 0.16s all ease-in-out;
   text-transform: uppercase;

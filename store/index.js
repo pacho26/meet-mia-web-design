@@ -127,9 +127,9 @@ export const getters = {
 
   getProductById: (state) => (id) =>
     state.allProducts.filter((item) => item.id === id),
-  
+
   getOtherProducts: (state) => state.allProducts.slice(0, 4),
-  
+
   getNumberOfItemsInCart: (state) => state.numberOfItemsInCart,
 };
 
