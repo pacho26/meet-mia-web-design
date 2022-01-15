@@ -118,7 +118,7 @@ footer {
 
       @media only screen and (max-width: 1000px) {
         &:not(:nth-of-type(3)) {
-          margin-bottom: 36px;
+          margin-bottom: 42px;
           display: flex;
           flex-direction: column;
           align-items: center;

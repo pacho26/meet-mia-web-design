@@ -37,6 +37,7 @@
           :name="product.name"
           :price="product.price"
           :imageSrc="product.imgSrc"
+          class="product"
         />
       </div>
     </div>
@@ -209,7 +210,13 @@ $secondary-500: #e2b96d;
       flex-wrap: wrap;
 
       & > * {
-        margin-bottom: 42px;
+        &:nth-of-type(1) {
+          margin-bottom: 42px;
+        }
+
+        &:nth-of-type(2) {
+          margin-bottom: 42px;
+        }
       }
     }
   }
