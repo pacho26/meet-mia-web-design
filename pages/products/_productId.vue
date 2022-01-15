@@ -209,13 +209,17 @@ $secondary-500: #e2b96d;
       gap: 2.6%;
       flex-wrap: wrap;
 
-      & > * {
-        &:nth-of-type(1) {
-          margin-bottom: 42px;
+      .product {
+        @media only screen and (max-width: 860px) {
+          &:not(:nth-of-type(4)) {
+            margin-bottom: 42px;
+          }
         }
 
-        &:nth-of-type(2) {
-          margin-bottom: 42px;
+        @media only screen and (max-width: 592px) {
+          &:nth-of-type(3) {
+            margin-bottom: 0;
+          }
         }
       }
     }
