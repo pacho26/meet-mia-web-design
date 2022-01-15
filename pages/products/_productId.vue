@@ -78,7 +78,6 @@ $primary-500: #558faa;
 $primary-600: #4d8199;
 $primary-700: #335666;
 $primary-800: #2b4755;
-$primary-900: #223944;
 $secondary-200: #f7ebd4;
 $secondary-300: #eed6aa;
 $secondary-400: #e2b96dea;
@@ -89,7 +88,6 @@ $secondary-500: #e2b96d;
     display: flex;
 
     .img-container {
-      // max-width: 40%;
       border-radius: 6px;
       overflow: hidden;
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
@@ -108,7 +106,6 @@ $secondary-500: #e2b96d;
 
     .text-container {
       margin-left: 6%;
-      // background: #fbf5ea9a;
       width: 100%;
       border-radius: 6px;
 
@@ -173,10 +170,6 @@ $secondary-500: #e2b96d;
       .line {
         border-color: #dde9ee;
       }
-
-      @media only screen and (max-width: 1000px) {
-        // max-width: 680px;
-      }
     }
 
     @media only screen and (max-width: 1000px) {
@@ -184,7 +177,6 @@ $secondary-500: #e2b96d;
       align-items: center;
 
       .img-container {
-        // max-width: 680px;
         border-radius: 6px;
         overflow: hidden;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
@@ -224,6 +216,14 @@ $secondary-500: #e2b96d;
 
   @media only screen and (max-width: 1548px) {
     margin: 0 3.3vw;
+  }
+
+  @media only screen and (max-width: 768px) {
+    margin-top: 75px + 38px;
+  }
+
+  @media only screen and (max-width: 592px) {
+    margin-top: 75px + 23px;
   }
 }
 </style>
