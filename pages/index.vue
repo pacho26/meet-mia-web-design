@@ -170,16 +170,14 @@ export default {
       font-size: 30px;
     }
   }
-}
 
-@media only screen and (max-width: 580px) {
   .categories {
     .cakes {
       max-width: 100%;
 
       .category-text-container {
         h2 {
-          font-size: 22px;
+          font-size: 24px;
         }
       }
 
@@ -192,24 +190,12 @@ export default {
       position: inherit;
       max-width: 100%;
       margin-top: 14px;
-
-      .category-text-container {
-        h2 {
-          font-size: 22px;
-        }
-      }
     }
 
     .croissants {
       position: inherit;
       max-width: 100%;
       margin-top: 14px;
-
-      .category-text-container {
-        h2 {
-          font-size: 22px;
-        }
-      }
     }
   }
 }
