@@ -93,10 +93,19 @@ export default {
   },
   methods: {
     scroll(id) {
+      let hash = location.hash;
+      if (hash !== '#bozicna-ponuda') {
+        if (this.isTouchDevice) {
+          setTimeout(() => {
+            window.scrollBy(0, 752);
+          }, 1);
+        } else {
+          setTimeout(() => {
+            window.scrollBy(0, 824);
+          }, 1);
+        }
+      }
       location.href = id;
-      setTimeout(() => {
-        window.scrollBy(0, -100);
-      }, 1);
     },
     plusSlides(n) {
       this.showSlides((this.slideIndex += n));
