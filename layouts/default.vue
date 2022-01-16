@@ -30,8 +30,12 @@ export default {
 main {
   margin: 0 auto;
   max-width: 1500px;
-  margin-top: 75px + 84px;
+  margin-top: 75px + 98px;
   margin-bottom: 140px;
+
+  @media only screen and (max-width: 1000px) {
+    margin-top: 75px + 64px;
+  }
 
   @media only screen and (max-width: 768px) {
     margin-top: 75px;
