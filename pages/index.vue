@@ -86,7 +86,7 @@ export default {
 
   .category-text-container {
     position: absolute;
-    right: 2.2%;
+    left: 2.2%;
     bottom: 1.2%;
 
     h2 {
