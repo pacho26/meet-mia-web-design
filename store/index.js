@@ -131,6 +131,9 @@ export const getters = {
   getOtherProducts: (state) => state.allProducts.slice(0, 4),
 
   getNumberOfItemsInCart: (state) => state.numberOfItemsInCart,
+
+  getCakes: (state) =>
+    state.allProducts.filter((el) => el.category === 'kolači'),
 };
 
 export const mutations = {

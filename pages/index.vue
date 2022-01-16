@@ -17,15 +17,17 @@
     </div>
 
     <div class="categories">
-      <div class="cakes">
-        <img
-          src="../assets/img/products/salty-and-nutty-cover.jpg"
-          style="width: 100%"
-        />
-        <div class="category-text-container">
-          <h2>Kolači</h2>
+      <nuxt-link to="svi-proizvodi">
+        <div class="cakes">
+          <img
+            src="../assets/img/products/salty-and-nutty-cover.jpg"
+            style="width: 100%"
+          />
+          <div class="category-text-container">
+            <h2>Kolači</h2>
+          </div>
         </div>
-      </div>
+      </nuxt-link>
 
       <div class="sandwiches">
         <img

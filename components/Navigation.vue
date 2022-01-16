@@ -16,19 +16,19 @@
             <fa class="fa-caret-square-down" icon="caret-square-down"></fa>
           </div>
           <div class="dropdown-content">
-            <nuxt-link to="about-us" class="dropdown-item nav-link"
+            <nuxt-link to="o-nama" class="dropdown-item nav-link"
               >Kolači</nuxt-link
             >
-            <nuxt-link to="about-us" class="dropdown-item nav-link"
+            <nuxt-link to="o-nama" class="dropdown-item nav-link"
               >Sendviči</nuxt-link
             >
-            <nuxt-link to="about-us" class="dropdown-item nav-link"
+            <nuxt-link to="o-nama" class="dropdown-item nav-link"
               >Kroasani</nuxt-link
             >
           </div>
         </div>
-        <nuxt-link class="nav-link" to="about-us">O nama </nuxt-link>
-        <nuxt-link class="nav-link" to="about-us">Kontakt </nuxt-link>
+        <nuxt-link class="nav-link" to="o-nama">O nama </nuxt-link>
+        <nuxt-link class="nav-link" to="o-nama">Kontakt </nuxt-link>
       </ul>
 
       <div class="user-icons">
@@ -81,7 +81,7 @@ export default {
     },
     changeRoute() {
       this.$router.push({
-        path: '/about-us',
+        path: '/o-nama',
       });
     },
   },

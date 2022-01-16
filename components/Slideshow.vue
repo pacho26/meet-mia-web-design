@@ -6,11 +6,11 @@
         <div class="slideshow-text">
           <h1>Meet Mia</h1>
           <p>Dobro došli u naš branch & cake bar, najslađe mjesto u gradu!</p>
-          <nuxt-link to="about-us">
+          <nuxt-link to="o-nama">
             <BaseButton
               class="slideshow-btn"
               :buttonText="'Saznajte više'"
-              to="/about-us"
+              to="/o-nama"
             />
           </nuxt-link>
         </div>

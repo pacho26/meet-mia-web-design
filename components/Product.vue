@@ -41,7 +41,7 @@ export default {
 
   computed: {
     redirection() {
-      return `/products/${this.id}`;
+      return `/proizvodi/${this.id}`;
     },
   },
 };
