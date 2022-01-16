@@ -66,7 +66,7 @@ export const state = () => ({
     {
       id: '46MDp5Pe',
       name: 'No Name',
-      desc: 'Čokolada, čokolada i čokolada.',
+      desc: 'Čokoladni biskvit, hrkavi sloj čokolade s lješnjacima, žele od karamele, čokoladna krema, mousse od tonke.',
       imgSrc: 'no-name.jpg',
       price: 38,
       category: 'kolači',
@@ -74,7 +74,7 @@ export const state = () => ({
     {
       id: '9t0d5mHf',
       name: 'Petit Fours',
-      desc: 'Šareni izbor četiri nasumična kolača s raznim sastojcima.',
+      desc: 'Zanimljiva kombinacija 4 kolačića s raznim sastojcima u mini verziji po izboru ekipe iz kuhinje.',
       imgSrc: 'petit-fours.jpg',
       price: 20,
       category: 'kolači',
