@@ -17,7 +17,7 @@
     </div>
 
     <div class="categories">
-      <nuxt-link to="/proizvodi">
+      <nuxt-link to="proizvodi/kolaci">
         <div class="cakes">
           <img
             src="../assets/img/products/salty-and-nutty-cover.jpg"
@@ -29,7 +29,7 @@
         </div>
       </nuxt-link>
 
-      <nuxt-link to="/proizvodi#sandwiches">
+      <nuxt-link to="proizvodi/sendvici">
         <div class="sandwiches">
           <img
             src="../assets/img/products/signor-prosciutto.jpg"
@@ -41,7 +41,7 @@
         </div>
       </nuxt-link>
 
-      <nuxt-link to="/proizvodi#croissants">
+      <nuxt-link to="proizvodi/kroasani">
         <div class="croissants">
           <img
             src="../assets/img/products/croissant-pistacija.jpg"

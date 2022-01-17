@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="content" id="content">
     <div class="product-container">
       <div class="img-container">
         <img
@@ -57,13 +57,10 @@ export default {
     };
   },
   mounted() {
-    this.categoryLink = `/proizvodi/${
-      this.product.category === 'sendviči'
-        ? '#sandwiches'
-        : this.product.category === 'kroasani'
-        ? '#croissants'
-        : ''
-    }`;
+    const elementScrollTop = document.getElementById('content');
+    elementScrollTop.scrollTop;
+
+    this.categoryLink = `/proizvodi/${this.product.category.replace('č', 'c')}`;
   },
   computed: {
     ...mapGetters(['getProductById', 'getOtherProducts']),
@@ -94,8 +91,10 @@ $secondary-500: #e2b96d;
 .content {
   .product-container {
     display: flex;
+    justify-content: space-between;
 
     .img-container {
+      width: 48.6%;
       border-radius: 6px;
       overflow: hidden;
       box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
@@ -113,8 +112,7 @@ $secondary-500: #e2b96d;
     }
 
     .text-container {
-      margin-left: 6%;
-      width: 100%;
+      width: 42%;
       border-radius: 6px;
 
       .link {
@@ -127,13 +125,11 @@ $secondary-500: #e2b96d;
       }
 
       .price {
-        font-family: 'Open Sans Condensed';
-        font-size: 36px;
+        font-size: 32px;
         color: $primary-800;
         opacity: 0.7;
 
         .number {
-          font-family: 'Open Sans Condensed';
           font-weight: 700;
         }
       }
@@ -146,8 +142,7 @@ $secondary-500: #e2b96d;
 
       .category {
         text-transform: uppercase;
-        font-family: 'Open Sans Condensed';
-        font-weight: 700;
+        font-weight: 600;
         font-size: 18px;
         background: $secondary-400;
         width: fit-content;
@@ -176,6 +171,7 @@ $secondary-500: #e2b96d;
           border: 1px solid $primary-200;
           border-radius: 4px;
           font-family: 'Open Sans Condensed';
+          -moz-appearance: textfield;
         }
       }
 
@@ -189,6 +185,7 @@ $secondary-500: #e2b96d;
       align-items: center;
 
       .img-container {
+        width: 100%;
         border-radius: 6px;
         overflow: hidden;
         box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
@@ -201,6 +198,7 @@ $secondary-500: #e2b96d;
       }
 
       .text-container {
+        width: 100%;
         margin-top: 48px;
         margin-left: 0;
       }

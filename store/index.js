@@ -1,6 +1,5 @@
 export const state = () => ({
   numberOfItemsInCart: 0,
-  numberOfLoadedImages: 0,
   christmasProducts: [
     {
       id: '2U03C1GI',
@@ -60,7 +59,7 @@ export const state = () => ({
     {
       id: '2U03C1GI',
       name: '6 divas',
-      desc: 'Čokoladni tart, čokoladni biskvit, čokoladna karamela, krema sa slanom čokoladom, mousse od mliječne čokolade, čokoladni crumble.',
+      desc: 'Čokoladni tart, čokoladni biskvit, čokoladna karamela, krema sa slanom čokoladom, mousse od mliječne čokolade, čokoladni crumble',
       imgSrc: '6-divas.jpg',
       price: 22,
       category: 'kolači',
@@ -68,7 +67,7 @@ export const state = () => ({
     {
       id: '46MDp5Pe',
       name: 'No Name',
-      desc: 'Čokoladni biskvit, hrkavi sloj čokolade s lješnjacima, žele od karamele, čokoladna krema, mousse od tonke.',
+      desc: 'Čokoladni biskvit, hrkavi sloj čokolade s lješnjacima, žele od karamele, čokoladna krema, mousse od tonke',
       imgSrc: 'no-name.jpg',
       price: 38,
       category: 'kolači',
@@ -76,7 +75,7 @@ export const state = () => ({
     {
       id: '9t0d5mHf',
       name: 'Petit Fours',
-      desc: 'Zanimljiva kombinacija 4 kolačića s raznim sastojcima u mini verziji po izboru ekipe iz kuhinje.',
+      desc: 'Zanimljiva kombinacija 4 kolačića s raznim sastojcima u mini verziji po izboru ekipe iz kuhinje',
       imgSrc: 'petit-fours.jpg',
       price: 20,
       category: 'kolači',
@@ -289,11 +288,5 @@ export const getters = {
 export const mutations = {
   addItemToCart(state) {
     state.numberOfItemsInCart++;
-  },
-  resetNumberOfLoadedImages(state) {
-    state.numberOfLoadedPictures = 0;
-  },
-  incrementNumberOfLoadedImages(state) {
-    state.numberOfLoadedImages++;
   },
 };

@@ -36,8 +36,7 @@ export default {
   &__name {
     color: #335666;
     font-size: 36px;
-    font-family: 'Open Sans Condensed';
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 24px;
   }
 

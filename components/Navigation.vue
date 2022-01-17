@@ -16,13 +16,13 @@
             <fa class="fa-caret-square-down" icon="caret-square-down"></fa>
           </div>
           <div class="dropdown-content">
-            <nuxt-link to="/proizvodi" class="dropdown-item nav-link"
+            <nuxt-link to="/proizvodi/kolaci" class="dropdown-item nav-link"
               >Kolači</nuxt-link
             >
-            <nuxt-link to="/proizvodi#sandwiches" class="dropdown-item nav-link"
+            <nuxt-link to="/proizvodi/sendvici" class="dropdown-item nav-link"
               >Sendviči</nuxt-link
             >
-            <nuxt-link to="/proizvodi#croissants" class="dropdown-item nav-link"
+            <nuxt-link to="/proizvodi/kroasani" class="dropdown-item nav-link"
               >Kroasani</nuxt-link
             >
           </div>

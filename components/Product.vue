@@ -4,7 +4,6 @@
       <img
         :src="require(`@/assets/img/products/${this.imageSrc}`)"
         style="width: 100%"
-        @load="incrementNumberOfLoadedImages()"
       />
     </div>
     <div class="product-desc">
@@ -18,8 +17,6 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex';
-
 export default {
   props: {
     id: {
@@ -46,9 +43,6 @@ export default {
     redirection() {
       return `/proizvodi/${this.id}`;
     },
-  },
-  methods: {
-    ...mapMutations(['incrementNumberOfLoadedImages']),
   },
 };
 </script>
@@ -82,14 +76,13 @@ export default {
     }
 
     .price {
-      font-family: 'Open Sans Condensed';
       font-size: 28px;
       color: #335566;
       opacity: 0.8;
       margin-bottom: 0px;
       .number {
-        font-family: 'Open Sans Condensed';
         font-weight: 700;
+        margin-right: 3px;
       }
     }
   }
@@ -122,7 +115,6 @@ export default {
 
         .number {
           font-weight: 700;
-          margin-right: 2px;
         }
       }
     }
