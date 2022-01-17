@@ -260,11 +260,13 @@ export const getters = {
   getChristmasProducts: (state) => state.christmasProducts,
 
   getProductById: (state) => (id) =>
-    state.allProducts.filter((item) => item.id === id),
+    state.allProducts.filter((item) => item.id === id)[0],
 
   getOtherProducts: (state) => state.allProducts.slice(0, 4),
 
   getNumberOfItemsInCart: (state) => state.numberOfItemsInCart,
+
+  getAllProducts: (state) => state.allProducts,
 
   getCakes: (state) =>
     state.allProducts
@@ -282,8 +284,6 @@ export const getters = {
       .sort((a, b) => (a.price > b.price ? 1 : -1)),
 
   getNumberOfAllProducts: (state) => state.allProducts.length,
-
-  getNumberOfLoadedImages: (state) => state.resetNumberOfLoadedImages,
 };
 
 export const mutations = {

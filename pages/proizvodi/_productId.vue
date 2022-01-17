@@ -8,7 +8,9 @@
         />
       </div>
       <div class="text-container">
-        <div class="category">{{ product.category }}</div>
+        <nuxt-link class="link" :to="categoryLink">
+          <div class="category">{{ product.category }}</div>
+        </nuxt-link>
         <h1>{{ product.name }}</h1>
         <h2 class="price">
           <span class="number">{{ product.price.toFixed(2) }}</span
@@ -51,18 +53,23 @@ export default {
   data() {
     return {
       productId: this.$route.params.productId,
-      isLoading: true,
+      categoryLink: '',
     };
   },
   mounted() {
-    this.isLoading = false;
+    this.categoryLink = `/proizvodi/${
+      this.product.category === 'sendviči'
+        ? '#sandwiches'
+        : this.product.category === 'kroasani'
+        ? '#croissants'
+        : ''
+    }`;
   },
   computed: {
-    ...mapGetters(['getProductById']),
-    ...mapGetters(['getOtherProducts']),
+    ...mapGetters(['getProductById', 'getOtherProducts']),
 
     product() {
-      return this.getProductById(this.productId)[0];
+      return this.getProductById(this.productId);
     },
   },
   methods: {
@@ -109,6 +116,10 @@ $secondary-500: #e2b96d;
       margin-left: 6%;
       width: 100%;
       border-radius: 6px;
+
+      .link {
+        text-decoration: none;
+      }
 
       h1 {
         color: $primary-700;

@@ -35,8 +35,10 @@ export default {
 .category-container {
   &__name {
     color: #335666;
-    font-size: 34px;
-    margin-bottom: 18px;
+    font-size: 36px;
+    font-family: 'Open Sans Condensed';
+    font-weight: 700;
+    margin-bottom: 24px;
   }
 
   &__products {

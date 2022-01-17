@@ -2,12 +2,14 @@
   <div>
     <BaseLoader v-if="numberOfLoadedImages < getNumberOfAllProducts" />
     <div class="content">
-      <CategoryProducts categoryName="Kolači" :products="getCakes" />
+      <CategoryProducts id="cakes" categoryName="Kolači" :products="getCakes" />
+      <hr class="line" />
       <CategoryProducts
         id="sandwiches"
         categoryName="Sendviči"
         :products="getSandwiches"
       />
+      <hr class="line" />
       <CategoryProducts
         id="croissants"
         categoryName="Kroasani"
@@ -46,8 +48,9 @@ export default {
 
 <style lang="scss" scoped>
 .content {
-  & > *:not(:last-child) {
-    margin-bottom: 64px;
+  .line {
+    border-color: #dde9ee;
+    margin-bottom: 68px !important;
   }
 
   @media only screen and (max-width: 1548px) {
