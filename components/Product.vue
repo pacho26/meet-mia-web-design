@@ -4,6 +4,7 @@
       <img
         :src="require(`@/assets/img/products/${this.imageSrc}`)"
         style="width: 100%"
+        @load="incrementNumberOfLoadedImages()"
       />
     </div>
     <div class="product-desc">
@@ -17,6 +18,8 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
+
 export default {
   props: {
     id: {
@@ -44,6 +47,9 @@ export default {
       return `/proizvodi/${this.id}`;
     },
   },
+  methods: {
+    ...mapMutations(['incrementNumberOfLoadedImages']),
+  },
 };
 </script>
 
@@ -67,21 +73,23 @@ export default {
   .product-desc {
     background: #fff;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    padding: 14px 14px 4px 14px;
+    padding: 12px 14px 12px 14px;
+
+    h4 {
+      margin-bottom: 0px;
+    }
 
     .price {
       font-family: 'Open Sans Condensed';
       font-size: 28px;
       color: #335566;
       opacity: 0.8;
-
+      margin-bottom: 0px;
       .number {
         font-family: 'Open Sans Condensed';
         font-weight: 700;
-        margin-right: 2px;
       }
     }
   }
@@ -98,17 +106,16 @@ export default {
     }
   }
 
-  @media only screen and (max-width: 1400px) {
+  @media only screen and (max-width: 1312px) {
     .product-desc {
-      flex-direction: column;
-      align-items: inherit;
       padding: 0px 12px 0px 14px;
 
       h4 {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 4px;
         margin-top: 8px;
       }
+
       .price {
         font-size: 17px;
         margin-bottom: 8px;
@@ -123,12 +130,6 @@ export default {
 
   @media only screen and (max-width: 860px) {
     max-width: 31.5%;
-
-    .product-desc {
-      h4 {
-        font-size: 20px;
-      }
-    }
   }
 
   @media only screen and (max-width: 580px) {

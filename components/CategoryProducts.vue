@@ -1,6 +1,8 @@
 <template>
   <div class="category-container">
-    <h3 class="category-container__name">Kolači</h3>
+    <h3 class="category-container__name">
+      {{ categoryName }}
+    </h3>
     <div class="category-container__products">
       <Product
         v-for="product in products"
@@ -17,10 +19,13 @@
 <script>
 export default {
   props: {
+    categoryName: {
+      type: String,
+      required: true,
+    },
     products: {
       type: Array,
       required: true,
-      default: [],
     },
   },
 };
@@ -30,6 +35,7 @@ export default {
 .category-container {
   &__name {
     color: #335666;
+    font-size: 34px;
     margin-bottom: 18px;
   }
 

@@ -5,7 +5,10 @@
         <img src="../assets/img/about-us-cover.jpg" />
         <div class="slideshow-text">
           <h1>Meet Mia</h1>
-          <p>Dobro došli u naš branch & cake bar, najslađe mjesto u gradu!</p>
+          <p>
+            Dobro došli u naš branch & cake bar, najslađe mjesto u gradu!
+            Upoznajte Miu uz vrhunske francuske slastice.
+          </p>
           <nuxt-link to="o-nama">
             <BaseButton
               class="slideshow-btn"
@@ -93,18 +96,6 @@ export default {
   },
   methods: {
     scroll(id) {
-      let hash = location.hash;
-      if (hash !== '#bozicna-ponuda') {
-        if (this.isTouchDevice) {
-          setTimeout(() => {
-            window.scrollBy(0, 752);
-          }, 1);
-        } else {
-          setTimeout(() => {
-            window.scrollBy(0, 824);
-          }, 1);
-        }
-      }
       location.href = id;
     },
     plusSlides(n) {
