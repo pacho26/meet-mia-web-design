@@ -333,7 +333,7 @@ export default {
   #hamburger-icon {
     display: block;
     cursor: pointer;
-    margin-right: 25.1vw;
+    margin-right: 24.8vw;
   }
 
   #hamburger-icon:hover {

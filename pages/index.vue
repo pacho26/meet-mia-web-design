@@ -29,8 +29,8 @@
         </div>
       </nuxt-link>
 
-      <nuxt-link to="proizvodi/sendvici">
-        <div class="sandwiches">
+      <div class="sandwiches">
+        <nuxt-link to="proizvodi/sendvici">
           <img
             src="../assets/img/products/signor-prosciutto.jpg"
             style="width: 100%"
@@ -38,8 +38,8 @@
           <div class="category-text-container">
             <h2>Sendviči</h2>
           </div>
-        </div>
-      </nuxt-link>
+        </nuxt-link>
+      </div>
 
       <nuxt-link to="proizvodi/kroasani">
         <div class="croissants">
@@ -193,12 +193,7 @@ export default {
       }
     }
 
-    .sandwiches {
-      position: inherit;
-      max-width: 100%;
-      margin-top: 14px;
-    }
-
+    .sandwiches,
     .croissants {
       position: inherit;
       max-width: 100%;
