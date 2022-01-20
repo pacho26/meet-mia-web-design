@@ -35,7 +35,7 @@ $colors: #1a2b33, #2b4755, #669ab2, #aac7d4;
   @for $i from 1 through length($colors) {
     &:nth-child(#{$i}) {
       background: nth($colors, $i);
-      border-radius: 6px;
+      border-radius: 5px;
     }
   }
 

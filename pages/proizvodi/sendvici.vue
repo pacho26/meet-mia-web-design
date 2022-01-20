@@ -23,11 +23,11 @@ export default {
   }
 
   @media only screen and (max-width: 768px) {
-    margin-top: 75px + 38px;
+    margin-top: 75px + 44px;
   }
 
   @media only screen and (max-width: 592px) {
-    margin-top: 75px + 23px;
+    margin-top: 75px + 28px;
   }
 }
 </style>

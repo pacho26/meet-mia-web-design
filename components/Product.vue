@@ -52,8 +52,8 @@ export default {
   max-width: 23%;
   overflow: hidden;
   color: #3c6477;
-  border-radius: 6px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   text-decoration: none;
 
   .img-hover-zoom {

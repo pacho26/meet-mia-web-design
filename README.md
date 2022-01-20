@@ -6,7 +6,7 @@
 
 - About us page
 - Stars (rating) of each product
-- All products page with section for each category
+- Bug on category link
 
 ## Build Setup
 

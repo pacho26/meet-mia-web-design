@@ -8,9 +8,12 @@
         />
       </div>
       <div class="text-container">
-        <nuxt-link class="link" :to="categoryLink">
-          <div class="category">{{ product.category }}</div>
-        </nuxt-link>
+        <div class="category">
+          <nuxt-link class="link" :to="categoryLink">
+            {{ product.category }}
+          </nuxt-link>
+        </div>
+
         <h1>{{ product.name }}</h1>
         <h2 class="price">
           <span class="number">{{ product.price.toFixed(2) }}</span
@@ -76,6 +79,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$primary-100: #aac7d4de;
 $primary-200: #aac7d4;
 $primary-300: #88b1c3;
 $primary-400: #6b9db4;
@@ -83,6 +87,7 @@ $primary-500: #558faa;
 $primary-600: #4d8199;
 $primary-700: #335666;
 $primary-800: #2b4755;
+$secondary-100: #e2e2e2;
 $secondary-200: #f7ebd4;
 $secondary-300: #eed6aa;
 $secondary-400: #e2b96dea;
@@ -95,32 +100,23 @@ $secondary-500: #e2b96d;
 
     .img-container {
       width: 48.6%;
-      border-radius: 6px;
+      border-radius: 5px;
       overflow: hidden;
-      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
       img {
         aspect-ratio: 4 / 2.9;
         object-fit: cover;
         object-position: center center;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-          transform: scale(1.03);
-        }
       }
     }
 
     .text-container {
       width: 42%;
-      border-radius: 6px;
-
-      .link {
-        text-decoration: none;
-      }
+      border-radius: 5px;
 
       h1 {
-        color: $primary-700;
+        color: $primary-800;
         margin-bottom: 0;
       }
 
@@ -148,11 +144,16 @@ $secondary-500: #e2b96d;
         width: fit-content;
         padding: 0px 16px;
         border-radius: 4px;
-        color: #fff;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
         margin-bottom: 2px;
         user-select: none;
+        text-decoration: none;
+
+        .link {
+          text-decoration: none;
+          color: #fff;
+        }
 
         &:hover {
           background: $secondary-500;
@@ -168,10 +169,17 @@ $secondary-500: #e2b96d;
           max-width: 60px;
           text-align: center;
           font-size: 24px;
-          border: 1px solid $primary-200;
+          border: 1px solid $secondary-100;
+          border-radius: 4px;
           border-radius: 4px;
           font-family: 'Open Sans Condensed';
           -moz-appearance: textfield;
+
+          &:focus {
+            outline: none !important;
+            border-color: $primary-300;
+            box-shadow: 0 0 10px $primary-100;
+          }
         }
       }
 
@@ -186,9 +194,9 @@ $secondary-500: #e2b96d;
 
       .img-container {
         width: 100%;
-        border-radius: 6px;
+        border-radius: 5px;
         overflow: hidden;
-        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         img {
           aspect-ratio: 4 / 2.9;

@@ -100,7 +100,7 @@ export default {
       text-align: right;
       backdrop-filter: blur(10px);
       background: hsla(0, 0%, 100%, 0.2);
-      border-radius: 6px;
+      border-radius: 5px;
       padding: 12px;
       color: #2b4755;
     }
@@ -110,14 +110,14 @@ export default {
     filter: gray;
     -webkit-filter: grayscale(0.5);
     -webkit-transition: all 0.25s ease-in-out;
-    border-radius: 6px;
+    border-radius: 5px;
   }
 
   .cakes {
     max-width: 60%;
     position: relative;
     -webkit-transition: all 0.25s ease-in-out;
-    border-radius: 6px;
+    border-radius: 5px;
   }
 
   .sandwiches {

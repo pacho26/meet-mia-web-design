@@ -19,30 +19,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$primary-color: #4d8199;
-$secondary-color: rgb(241, 241, 241);
+$primary-700: #4d8199;
+$primary-600: #558faa;
 
 * {
   box-sizing: border-box;
 }
 
 .btn {
-  border-radius: 6px;
-  background: $primary-color;
+  border-radius: 5px;
+  background: $primary-700;
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 500;
   padding: 10px 26px;
   transition: all 0.2s ease-in-out;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.14);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   cursor: pointer;
   outline: 0;
   border: none;
 
   &:hover {
-    background: $secondary-color;
-    color: $primary-color;
+    background: $primary-600;
+    transform: scale(1.01);
   }
 
   &:focus {

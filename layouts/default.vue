@@ -2,12 +2,12 @@
   <div>
     <BaseLoader v-if="isLoading" />
 
-    <div class="content-container">
+    <div class="page-container">
       <Navigation />
       <main>
         <Nuxt />
       </main>
-      <Footer />
+      <Footer class="footer" />
     </div>
   </div>
 </template>
@@ -32,6 +32,11 @@ main {
   max-width: 1500px;
   margin-top: 75px + 98px;
   margin-bottom: 140px;
+  min-height: 48vh;
+
+  @media only screen and (min-height: 1120px) {
+    min-height: 56vh;
+  }
 
   @media only screen and (max-width: 1000px) {
     margin-top: 75px + 64px;

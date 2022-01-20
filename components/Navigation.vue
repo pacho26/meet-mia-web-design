@@ -28,7 +28,7 @@
           </div>
         </div>
         <nuxt-link class="nav-link" to="/o-nama">O nama </nuxt-link>
-        <nuxt-link class="nav-link" to="/o-nama">Kontakt </nuxt-link>
+        <nuxt-link class="nav-link" to="/kontakt">Kontakt </nuxt-link>
       </ul>
 
       <div class="user-icons">
@@ -97,7 +97,7 @@ export default {
 
 .nav-container {
   height: 75px;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.11);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   z-index: 999;
   position: fixed;
   top: 0;
@@ -198,8 +198,8 @@ export default {
   top: 75px;
   background: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-  border-radius: 0 0 6px 6px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0 0 5px 5px;
   transition: 0.16s all ease-in-out;
 }
 
@@ -210,7 +210,7 @@ export default {
 }
 
 .dropdown-item:last-of-type {
-  border-radius: 0 0 6px 6px;
+  border-radius: 0 0 5px 5px;
 }
 
 .dropdown-content .dropdown-item {
@@ -312,7 +312,7 @@ export default {
   }
 
   .mobile-nav {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.12);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
 
   .mobile-nav > li {
