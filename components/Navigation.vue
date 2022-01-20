@@ -47,19 +47,30 @@
 
     <ul class="mobile-nav" ref="mobileNav">
       <li id="mobile-dropdown" @click="extendMobileDropdown()">
-        <a href="#">Proizvodi</a>
+        <div class="item">Proizvodi</div>
 
         <fa class="fa-caret-square-down" icon="caret-square-down"></fa>
       </li>
 
       <div class="mobile-dropdown-content" ref="mobileDropdownContent">
-        <li id="mobile-dropdown-item"><a href="#">Kolači</a></li>
-        <li id="mobile-dropdown-item"><a href="#">Sendviči</a></li>
-        <li id="mobile-dropdown-item"><a href="#">Kroasani</a></li>
+        <li id="mobile-dropdown-item" @click="extendHamburger()">
+          <nuxt-link to="/proizvodi/kolaci">Kolači</nuxt-link>
+        </li>
+        <li id="mobile-dropdown-item" @click="extendHamburger()">
+          <nuxt-link to="/proizvodi/sendvici">Sendviči</nuxt-link>
+        </li>
+        <li id="mobile-dropdown-item" @click="extendHamburger()">
+          <nuxt-link to="/proizvodi/kroasani">Kroasani</nuxt-link>
+        </li>
       </div>
 
-      <li><a href="#">O nama</a></li>
-      <li><a href="#">Kontakt</a></li>
+      <li @click="extendHamburger()">
+        <!-- <a href="/o-nama">O nama</a> -->
+        <nuxt-link to="/o-nama">O nama</nuxt-link>
+      </li>
+      <li @click="extendHamburger()">
+        <nuxt-link to="/kontakt">Kontakt</nuxt-link>
+      </li>
     </ul>
   </div>
 </template>
@@ -312,7 +323,7 @@ export default {
   }
 
   .mobile-nav {
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.3) 0px 0px 20px 0px;
   }
 
   .mobile-nav > li {
@@ -368,6 +379,13 @@ export default {
   }
 
   ul li a {
+    text-decoration: none;
+    color: #507c95;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  ul li .item {
     text-decoration: none;
     color: #507c95;
     font-weight: 500;
