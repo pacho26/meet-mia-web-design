@@ -2,19 +2,20 @@
   <footer>
     <div class="footer-content">
       <div class="footer-content__column">
-        <h4>Proizvodi</h4>
-        <p>Kolači</p>
-        <p>Sendviči</p>
-        <p>Kroasani</p>
+        <h4>Meet Mia</h4>
+        <nuxt-link to="/"> Naslovna </nuxt-link>
+        <nuxt-link to="/o-nama"> O nama </nuxt-link>
+        <nuxt-link to="/kontakt"> Kontakt </nuxt-link>
       </div>
       <div class="footer-content__column">
-        <h4>O nama</h4>
-        <p>Paragraf 1</p>
-        <p>Paragraf 2</p>
-        <p>Paragraf 3</p>
+        <h4>Proizvodi</h4>
+        <nuxt-link to="/proizvodi/kolaci"> Kolači </nuxt-link>
+        <nuxt-link to="/proizvodi/sendvici"> Sendviči </nuxt-link>
+        <nuxt-link to="/proizvodi/kroasani"> Kroasani </nuxt-link>
       </div>
+
       <div class="footer-content__column brand-logo-container">
-        <nuxt-link class="logo" to="/">
+        <nuxt-link class="logo" to="/r">
           <img src="../assets/img/logo-cropped.png" alt="logo" width="100%" />
         </nuxt-link>
         <div class="brands">
@@ -36,16 +37,23 @@
         </div>
       </div>
       <div class="footer-content__column">
-        <h4>Kontaktirajte nas</h4>
-        <p>Paragraf 1</p>
-        <p>Paragraf 2</p>
-        <p>Paragraf 3</p>
+        <h4>Pronađite nas</h4>
+        <p>Vlaška ul. 43, 10000, Zagreb</p>
+        <p>meetmia.cakes@gmail.com</p>
+        <p>+385 91 445 5122</p>
       </div>
       <div class="footer-content__column">
-        <h4>Kontaktirajte nas</h4>
-        <p>Paragraf 1</p>
-        <p>Paragraf 2</p>
-        <p>Paragraf 3</p>
+        <h4>Zapratite nas</h4>
+        <a href="https://www.facebook.com/meetmia/" target="blank"> Facebook</a>
+        <a href="https://www.instagram.com/meetmiacakes/?hl=hr" target="blank">
+          Instagram</a
+        >
+        <a
+          href="https://wolt.com/hr/hrv/zagreb/restaurant/meet-mia"
+          target="blank"
+        >
+          Wolt</a
+        >
       </div>
     </div>
   </footer>
@@ -67,6 +75,8 @@ footer {
 
     &__column {
       min-width: 160px;
+      display: flex;
+      flex-direction: column;
 
       h4 {
         font-size: 18px;
@@ -80,7 +90,19 @@ footer {
       }
 
       p {
+        cursor: initial;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
         margin-bottom: 10px;
+        width: fit-content;
+        transition: all 0.2s ease-in-out;
       }
 
       .brand-icon {

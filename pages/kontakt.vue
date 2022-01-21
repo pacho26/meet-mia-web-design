@@ -36,7 +36,7 @@
         </div>
         <div class="info__section">
           <p class="property-name">Mobitel</p>
-          <p>091 445 5122</p>
+          <p>+385 91 445 5122</p>
         </div>
       </div>
     </div>
