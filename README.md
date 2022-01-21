@@ -7,6 +7,9 @@
 - About us page
 - Stars (rating) of each product
 - Bug on category link
+- Add transition on inputs
+- Align price to the right on product
+- Move price on product page under the line (maybe?) and add more space between category name and product name 
 
 ## Build Setup
 
