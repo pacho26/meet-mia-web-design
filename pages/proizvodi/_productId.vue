@@ -15,13 +15,15 @@
         </div>
 
         <h1>{{ product.name }}</h1>
+
+        <p class="desc">{{ product.desc }}</p>
+
+        <hr class="line" />
+
         <h2 class="price">
           <span class="number">{{ product.price.toFixed(2) }}</span
           >kn
         </h2>
-        <p class="desc">{{ product.desc }}</p>
-
-        <hr class="line" />
 
         <div class="order-container">
           <input min="1" value="1" type="number" />
@@ -120,16 +122,6 @@ $secondary-500: #e2b96d;
         margin-bottom: 0;
       }
 
-      .price {
-        font-size: 32px;
-        color: $primary-800;
-        opacity: 0.7;
-
-        .number {
-          font-weight: 700;
-        }
-      }
-
       .desc {
         color: $primary-700;
         margin-top: 36px;
@@ -146,7 +138,7 @@ $secondary-500: #e2b96d;
         border-radius: 4px;
         cursor: pointer;
         transition: all 0.2s ease-in-out;
-        margin-bottom: 2px;
+        margin-bottom: 8px;
         user-select: none;
         text-decoration: none;
 
@@ -158,6 +150,22 @@ $secondary-500: #e2b96d;
         &:hover {
           background: $secondary-500;
           transform: scale(1.05) rotate(-2deg);
+        }
+      }
+
+      .line {
+        border-color: #dde9ee;
+      }
+
+      .price {
+        font-size: 32px;
+        color: $primary-800;
+        opacity: 0.7;
+        font-weight: 400;
+
+        .number {
+          margin-right: 2px;
+          font-weight: 700;
         }
       }
 
@@ -181,10 +189,6 @@ $secondary-500: #e2b96d;
             box-shadow: 0 0 10px $primary-100;
           }
         }
-      }
-
-      .line {
-        border-color: #dde9ee;
       }
     }
 

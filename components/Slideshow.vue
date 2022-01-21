@@ -138,6 +138,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$primary-900: #2b4755;
+
 * {
   box-sizing: border-box;
 }
@@ -166,24 +168,22 @@ export default {
     .slideshow-text {
       position: absolute;
       bottom: 0px;
-      // background: hsla(0, 0%, 93%, 0.77);
       backdrop-filter: blur(2.5px);
-      background: hsla(0, 0%, 100%, 0.45);
+      background: hsla(0, 0%, 100%, 0.35);
       width: 100%;
       padding: 12px 24px 24px 30px;
-      opacity: 0.9;
       transition: 0.2s ease-in-out;
 
       h1 {
         font-size: 48px;
-        color: #223944;
+        color: $primary-900;
         font-weight: 500;
         margin-bottom: 2px;
       }
 
       p {
         font-size: 20px;
-        color: #2b4755;
+        color: $primary-900;
         margin-bottom: 20px;
       }
 

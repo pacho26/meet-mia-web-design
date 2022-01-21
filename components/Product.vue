@@ -80,6 +80,7 @@ export default {
       color: #335566;
       opacity: 0.8;
       margin-bottom: 0px;
+      text-align: right;
       .number {
         font-weight: 700;
         margin-right: 3px;
