@@ -2,7 +2,14 @@
   <div>
     <div class="slideshow-container">
       <div class="slide fade">
-        <img src="../assets/img/about-us-cover.jpg" />
+        <img
+          src="image-small.jpg"
+          srcset="
+            ../assets/img/about-us-cover-1400.jpg 1400w,
+            ../assets/img/about-us-cover-2000.jpg 2000w
+          "
+        />
+
         <div class="slideshow-text">
           <h1>Meet Mia</h1>
           <p>
@@ -20,7 +27,13 @@
       </div>
 
       <div class="slide fade">
-        <img src="../assets/img/christmas-cover.jpg" />
+        <img
+          src="image-small.jpg"
+          srcset="
+            ../assets/img/christmas-cover-1400.jpg 1400w,
+            ../assets/img/christmas-cover-2000.jpg 2000w
+          "
+        />
         <div class="slideshow-text">
           <h1>Božićna ponuda</h1>
           <p>
@@ -138,7 +151,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$primary-900: #2b4755;
+$primary-900: #223944;
 
 * {
   box-sizing: border-box;
