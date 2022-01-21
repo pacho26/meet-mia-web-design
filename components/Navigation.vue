@@ -5,7 +5,7 @@
         <fa class="fa-bars" icon="bars"></fa>
       </div>
 
-      <nuxt-link id="logo" to="/">
+      <nuxt-link id="logo" to="/#">
         <img src="../assets/img/logo-cropped.png" alt="logo" />
       </nuxt-link>
 

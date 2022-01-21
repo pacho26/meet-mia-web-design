@@ -15,7 +15,7 @@
       </div>
 
       <div class="footer-content__column brand-logo-container">
-        <nuxt-link class="logo" to="/r">
+        <nuxt-link class="logo" to="/#">
           <img src="../assets/img/logo-cropped.png" alt="logo" width="100%" />
         </nuxt-link>
         <div class="brands">
@@ -44,13 +44,15 @@
       </div>
       <div class="footer-content__column">
         <h4>Zapratite nas</h4>
-        <a href="https://www.facebook.com/meetmia/" target="blank"> Facebook</a>
-        <a href="https://www.instagram.com/meetmiacakes/?hl=hr" target="blank">
+        <a href="https://www.facebook.com/meetmia/" target="_blank">
+          Facebook</a
+        >
+        <a href="https://www.instagram.com/meetmiacakes/?hl=hr" target="_blank">
           Instagram</a
         >
         <a
           href="https://wolt.com/hr/hrv/zagreb/restaurant/meet-mia"
-          target="blank"
+          target="_blank"
         >
           Wolt</a
         >
