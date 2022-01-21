@@ -261,7 +261,8 @@ export default {
 
 .user-icons > :hover {
   cursor: pointer;
-  opacity: 0.75;
+  opacity: 0.8;
+  transform: scale(1.05);
 }
 
 .fa-user {
