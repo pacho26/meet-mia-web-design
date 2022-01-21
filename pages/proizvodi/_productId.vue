@@ -88,12 +88,13 @@ $primary-400: #6b9db4;
 $primary-500: #558faa;
 $primary-600: #4d8199;
 $primary-700: #335666;
-$primary-800: #2b4755;
+$primary-800: #335566;
 $secondary-100: #e2e2e2;
 $secondary-200: #f7ebd4;
 $secondary-300: #eed6aa;
 $secondary-400: #e2b96dea;
 $secondary-500: #e2b96d;
+$grey-500: #666666;
 
 .content {
   .product-container {
@@ -123,7 +124,7 @@ $secondary-500: #e2b96d;
       }
 
       .desc {
-        color: $primary-700;
+        color: $grey-500;
         margin-top: 36px;
         font-size: 18px;
       }
@@ -162,6 +163,7 @@ $secondary-500: #e2b96d;
         color: $primary-800;
         opacity: 0.7;
         font-weight: 400;
+        margin-bottom: 12px;
 
         .number {
           margin-right: 2px;
