@@ -179,7 +179,7 @@ footer {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      gap: 32px;
+      gap: 18px;
 
       .brands {
         display: flex;

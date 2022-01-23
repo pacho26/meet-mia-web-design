@@ -1,7 +1,7 @@
 <template>
   <div class="form">
     <div class="form__row">
-      <input type="text" placeholder="Vaše ime" />
+      <input type="text" placeholder="Ime i prezime" />
       <input type="text" placeholder="Email adresa" />
     </div>
 
