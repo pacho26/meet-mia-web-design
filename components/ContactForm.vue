@@ -36,6 +36,10 @@ $secondary-100: #e2e2e2;
     justify-content: space-between;
     gap: 40px;
 
+    input {
+      width: 100%;
+    }
+
     @media only screen and (max-width: 1308px) {
       flex-direction: column;
       gap: inherit;
