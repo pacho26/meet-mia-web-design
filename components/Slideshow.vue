@@ -223,6 +223,9 @@ $primary-900: #223944;
       cursor: pointer;
       transition: ease-out 0.3s;
       display: none;
+      backdrop-filter: blur(2.5px);
+      background: hsla(0, 0%, 100%, 0.3);
+      border-radius: 5px;
 
       &:first-of-type {
         margin-left: 16px;

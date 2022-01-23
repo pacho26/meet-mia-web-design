@@ -63,6 +63,11 @@ export default {
   computed: {
     ...mapGetters(['getChristmasProducts']),
   },
+  mounted() {
+    if (location.pathname !== '/') {
+      location.pathname = '/';
+    }
+  },
 };
 </script>
 

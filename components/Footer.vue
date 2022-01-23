@@ -15,8 +15,13 @@
       </div>
 
       <div class="footer-content__column brand-logo-container">
-        <nuxt-link class="logo" to="/#">
-          <img src="../assets/img/logo-cropped.png" alt="logo" width="100%" />
+        <nuxt-link class="logo" to="/">
+          <img
+            src="../assets/img/logo-cropped.png"
+            alt="logo"
+            width="100%"
+            @click="scrollToTop()"
+          />
         </nuxt-link>
         <div class="brands">
           <a href="https://www.facebook.com/meetmia/" target="_blank"
@@ -60,6 +65,16 @@
     </div>
   </footer>
 </template>
+
+<script>
+export default {
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
+};
+</script>
 
 <style lang="scss" scoped>
 footer {

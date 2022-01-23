@@ -5,8 +5,12 @@
         <fa class="fa-bars" icon="bars"></fa>
       </div>
 
-      <nuxt-link id="logo" to="/#">
-        <img src="../assets/img/logo-cropped.png" alt="logo" />
+      <nuxt-link id="logo" to="/">
+        <img
+          src="../assets/img/logo-cropped.png"
+          alt="logo"
+          @click="scrollToTop()"
+        />
       </nuxt-link>
 
       <ul class="nav-list">
@@ -94,6 +98,9 @@ export default {
       this.$router.push({
         path: '/o-nama',
       });
+    },
+    scrollToTop() {
+      window.scrollTo(0, 0);
     },
   },
 };
