@@ -32,11 +32,12 @@
         </div>
         <div class="info__section">
           <p class="property-name">E-mail</p>
-          <p>meetmia.cakes@gmail.com</p>
+          <a href="mailto:meetmia.cakes@gmail.com">meetmia.cakes@gmail.com</a>
         </div>
         <div class="info__section">
           <p class="property-name">Mobitel</p>
-          <p>+385 91 445 5122</p>
+
+          <a href="tel:+385 91 445 5122">+385 91 445 5122</a>
         </div>
       </div>
     </div>
@@ -53,7 +54,8 @@ $primary-800: #2b4755;
     text-align: left;
   }
 
-  p {
+  p,
+  a {
     color: $primary-700;
     font-size: 19px;
     color: #666666;

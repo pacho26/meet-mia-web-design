@@ -44,8 +44,8 @@
       <div class="footer-content__column">
         <h4>Pronađite nas</h4>
         <p>Vlaška ul. 43, 10000, Zagreb</p>
-        <p>meetmia.cakes@gmail.com</p>
-        <p>+385 91 445 5122</p>
+        <a href="mailto:meetmia.cakes@gmail.com">meetmia.cakes@gmail.com</a>
+        <a href="tel:+385 91 445 5122">+385 91 445 5122</a>
       </div>
       <div class="footer-content__column">
         <h4>Zapratite nas</h4>
@@ -108,6 +108,7 @@ footer {
 
       p {
         cursor: initial;
+        margin-bottom: 12px;
 
         &:hover {
           opacity: 1;
@@ -117,7 +118,7 @@ footer {
       a {
         color: white;
         text-decoration: none;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
         width: fit-content;
         transition: all 0.2s ease-in-out;
       }
