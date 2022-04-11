@@ -1,6 +1,6 @@
-# Meet Mia
+# Meet Mia webshop
 
-<img src="https://tvz-web-dizajn-projekt.vercel.app/_nuxt/img/logo-cropped.af363f2.png" width="200">
+<img src="https://tvz-web-dizajn-projekt.vercel.app/_nuxt/img/logo-cropped.af363f2.png" width="96">
 
 ## Build Setup
 
