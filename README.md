@@ -1,6 +1,6 @@
 # Meet Mia
 
-<img src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.18169-9/11863239_1023481607716648_260935832054096310_n.png?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeF-Dw5fp0bv2X1MCYIsRwghh2DhaIOS8QSHYOFog5LxBGRJA9nX0O6BCimuJcReTsZcOvuaC5qzeSnFnc5B18AD&_nc_ohc=DMEJd-pjsUIAX96Jad6&_nc_ht=scontent-frx5-1.xx&oh=00_AT9oQdOHxAi1LOCtDR9zXZVk_HfvS591kK8jYVOSweCKsg&oe=62010E67" width="250">
+<img src="https://tvz-web-dizajn-projekt.vercel.app/_nuxt/img/logo-cropped.af363f2.png" width="250">
 
 ## Build Setup
 
